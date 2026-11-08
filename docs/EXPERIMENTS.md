@@ -24,12 +24,19 @@ Direct 要求只给最终答案。普通 CoT 要求写出关系式、带单位�
 
 五票组在温度 0.6 下独立作答五次。相对差不超过 1% 的数值可归入同一组，优先票数最多的一组，再按跨度和原始票号打破平局，取该组实际出现过的中位数。没有一致对时采用首个有效答案。投票阶段不读取标准答案。在同温度的控制中，首票单独答对 95 题，投票后为 93 题；在本次样本中，五票改变了个别题的答案，总成绩没有超过普通 CoT。
 
-## 微调工作的边界
+## 微调训练与权重
 
-团队在云端完成了 V3 QLoRA 训练。使用独立于上述 140 题的 120 道监督训练题和 26 道内部验证题，筛查教材母题编号、替换数值的近重复题和解题家族，并对数值答案复算。训练集来自同一基准的其他题，这一点应在课程报告中披露。
+我们使用同一基准的其他题目进行 QLoRA 训练，独立复算数值答案，检查教材母题、替换数值的相似题和解题家族。训练集含 120 条样本，内部验证集含 26 条样本，两者与课堂开发集和正式测试集的题号没有交集。[训练数据](../finetuning/train.jsonl) · [验证数据](../finetuning/val.jsonl)
 
-底座为 `Qwen/Qwen3.5-27B`，训练 revision 为 `8ee5435f4c700c6d8d4bb69efbf2e60c46b3e23e`。V3 在语言层上训练适配器，采用 NF4 双重量化、BF16 计算、LoRA rank 8、alpha 16、dropout 0.05、学习率 3e-5、1 个 epoch、序列长度 2048、单卡 batch 1、梯度累积 4。30 次更新完成，保留了第 15 和 30 步 checkpoint。[Qwen 官方模型](https://huggingface.co/Qwen/Qwen3.5-27B)
+底座为 `Qwen/Qwen3.5-27B`，训练使用的 ModelScope revision 为 `8ee5435f4c700c6d8d4bb69efbf2e60c46b3e23e`。我们在语言层上训练适配器，采用 NF4 双重量化、BF16 计算、LoRA rank 8、alpha 16、dropout 0.05 和学习率 3e-5。序列长度上限为 2048，单卡 batch 1，梯度累积 4 次。训练 1 个 epoch，共 30 次优化更新。[Qwen 官方模型](https://huggingface.co/Qwen/Qwen3.5-27B)
 
-发布目录 `models/v3-checkpoint-30/` 包含 PEFT 适配器权重和配置。加载时，先载入上文所列 ModelScope revision 的底座，再用 `PeftModel.from_pretrained(base_model, "models/v3-checkpoint-30")` 挂载适配器。发布版配置使用公开底座名称，适配器权重与训练导出逐字节一致。权重的 SHA-256 为 `5c0b0d93497dabba06a2ae223baef95d984a2c603b3de0620ed178762a507d49`。克隆 Git 仓库后可用 `git lfs pull` 取回权重，本项目提供的交付 ZIP 已包含完整权重文件。[Git LFS 说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+原训练环境使用 Linux、Python 3.11 和 PyTorch 2.8.0 + CUDA 12.8。在兼容的 GPU 环境中，从仓库根目录执行以下命令，并替换为底座的本地路径和一个新的输出目录。
 
-V3 尚无完整 120 道测试题的准确率。后续若评估 LoRA 对正确率的贡献，可在相同推理环境中对底座和挂载适配器的模型做逐题配对比较。
+```bash
+python -m pip install -r finetuning/requirements.txt
+bash finetuning/train.sh /path/to/Qwen3.5-27B /path/to/new-run
+```
+
+[权重目录](../models/lora-adapter/) 包含 PEFT 适配器权重和配置。先载入上述 revision 的底座，再从仓库根目录用 `PeftModel.from_pretrained(base_model, "models/lora-adapter")` 挂载适配器。权重的 SHA-256 为 `5c0b0d93497dabba06a2ae223baef95d984a2c603b3de0620ed178762a507d49`。克隆后可用 `git lfs pull` 获取权重。[Git LFS 说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+
+微调模型尚无完整 120 道测试题的准确率。

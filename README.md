@@ -28,6 +28,8 @@ python src/build_demo.py
 
 ## QLoRA 微调
 
-我们从同一基准的其他题目中筛选了 120 道监督训练题和 26 道内部验证题，并按教材母题、题干近重复和解题家族筛查与开发集、测试集的重叠。我们在 Qwen3.5-27B 的语言层上训练 LoRA 适配器，使用 4-bit NF4、rank 8、alpha 16 和学习率 3e-5，训练 1 个 epoch，共 30 次参数更新。[底座模型](https://huggingface.co/Qwen/Qwen3.5-27B) · [checkpoint-30 适配器](models/v3-checkpoint-30/)
+我们从 MatSciBench 的其他题目中筛选了 120 道监督训练题和 26 道内部验证题，并按教材母题、题干相似度和解题家族筛查与开发集、测试集的重叠。[训练集](finetuning/train.jsonl) · [内部验证集](finetuning/val.jsonl)
+
+我们在 Qwen3.5-27B 的语言层上训练 LoRA 适配器，使用 4-bit NF4、rank 8、alpha 16 和学习率 3e-5，训练 1 个 epoch，共 30 次参数更新。[底座模型](https://huggingface.co/Qwen/Qwen3.5-27B) · [训练脚本](finetuning/train.sh) · [微调权重](models/lora-adapter/)
 
 微调权重已包含在本仓库中，微调模型在完整 120 道测试题上的评测结果尚未获得。

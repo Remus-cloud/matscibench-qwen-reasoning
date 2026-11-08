@@ -9,7 +9,7 @@ __pycache__/
 *.partial
 *.gguf
 *.safetensors
-!/models/v3-checkpoint-30/adapter_model.safetensors
+!/models/lora-adapter/adapter_model.safetensors
 *.parquet
 *.zip
 *.tgz
