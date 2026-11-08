@@ -1,0 +1,1087 @@
+{
+  "split": "test",
+  "seed": 6020,
+  "dataset_sha256": "94b96f0a55b5d58a0f8a9c68799ded8f6627946239e805ac98e060c52399c1ed",
+  "rows": [
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 16.5",
+      "question": "An $\\mathrm{Fe} / \\mathrm{Fe}^{2+}$ concentration cell is constructed in which both electrodes are pure iron. The $\\mathrm{Fe}^{2+}$ concentration for one cell half is 0.5 M and for the other cell half is $2 \\times 10^{-2} \\mathrm{M}$. Is a voltage generated between the two cell halves? If so, what is its magnitude and which electrode will be oxidized?",
+      "unit": "V",
+      "answer": "0.0414",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 3.21",
+      "question": "Cobalt (Co) has an HCP crystal structure, an atomic radius of 0.1253 nm , and a c/a ratio of 1.623 . Compute the volume of the unit cell for Co.",
+      "unit": "nm^3",
+      "answer": "6.64E-02",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 6.2",
+      "question": "A tensile stress is to be applied along the long axis of a cylindrical brass rod that has a diameter of 10 mm. Brass has Young’s modulus E = 97 GPa and Poisson’s ratio ν = 0.34. Determine the magnitude of the load required to produce a 2.5×10⁻³ mm decrease in diameter if the deformation is entirely elastic.",
+      "unit": "N",
+      "answer": "5600",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 2-2",
+      "question": "Scientists are considering 3 nm‐diameter Fe nanoparticles for ultra‐high density data storage.  Given that the density of Fe is 7.8 g·cm⁻³ and its molar mass is 55.85 g·mol⁻¹, estimate the number of Fe atoms in a single spherical nanoparticle.",
+      "unit": "",
+      "answer": "1189",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 5.1",
+      "question": "A plate of iron is exposed to a carburizing (carbon-rich) atmosphere on one side and a decarburizing (carbon-deficient) atmosphere on the other side at $700^{\\circ}C(1300^{\\circ}F)$. If a condition of steady state is achieved, calculate the diffusion flux of carbon through the plate if the concentrations of carbon at positions of 5 and 10 mm ($5 \\times 10^{-3}$ and $10^{-2} m$) beneath the carburizing surface are 1.2 and 0.8 $kg/m^3$, respectively. Assume a diffusion coefficient of $3 \\times 10^{-11} m^2/s$ at this temperature.",
+      "unit": "kg/m^2s",
+      "answer": "2.4e-09",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_3.21",
+      "question": "Calculate the APF for polyethylene. Give your answer as the value of APF.",
+      "unit": "",
+      "answer": "0.12",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.3",
+      "question": "A house designed for passive solar heating has a substantial amount of brickwork in its interior to serve as a heat absorber. Each brick weighs 2.0 kg and has a specific heat of $850 \\mathrm{~J} / \\mathrm{kg} \\cdot \\mathrm{K}$. How many bricks are needed to absorb $5.0 \\times 10^4 \\mathrm{~kJ}$ of heat by a temperature increase of $10^{\\circ} \\mathrm{C}$ ? Give your answer as the value of number_of_bricks.",
+      "unit": "",
+      "answer": "2940",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.1",
+      "question": "For an aluminum alloy, the activation energy for crystal growth is $120 \\mathrm{~kJ} / \\mathrm{mol}$. By what factor would the rate of crystal growth change by dropping the alloy temperature from $500^{\\circ} \\mathrm{C}$ to room temperature $\\left(25^{\\circ} \\mathrm{C}\\right)$ ? Give your answer as the value of growth_rate_factor.",
+      "unit": "",
+      "answer": "8.43E+12",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.25",
+      "question": "Polyisoprene loses its elastic properties with $1 \\mathrm{wt} \\% \\mathrm{O}_2$ addition. If we assume that this loss is due to a cross-linking mechanism similar to that for sulfur, what fraction of the cross-link sites are occupied in this case? Give your answer as the value of fraction_of_cross_link_sites.",
+      "unit": "",
+      "answer": "0.0426",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Elastomers",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Physical_Metallurgy_Hosford_Example 3.2",
+      "question": "It is known that in a certain carburizing atmosphere it takes \n\\(\nt_1 = 8\\ \\mathrm{h}\n\\)\nat \n\\(\nT_1 = 900\\,^{\\circ}\\mathrm{C}\n\\)\nto obtain a carbon concentration of 0.75 at a depth\n\\(\nx_1 = 0.020\\ \\mathrm{in}\\,.\n\\)\nAt a higher temperature\n\\(\nT_2 = 950\\,^{\\circ}\\mathrm{C},\n\\)\nhow long \\(t_2\\) is required to reach the same concentration at \n\\(\nx_2 = 0.030\\ \\mathrm{in}\\,?\n\\)\nAssume the diffusion coefficient follows\n\\(\nD(T) \\;=\\; D_0 \\exp\\Bigl(-\\tfrac{Q}{R\\,T}\\Bigr),\n\\)\nwith\n\\(\nD_0 = 2\\times 10^{-5}\\ \\mathrm{m}^2/\\mathrm{s},\nQ = 140\\ \\mathrm{kJ/mol}.\n\\)\nGive your answer for \\(t_2\\) in hours.",
+      "unit": "10",
+      "answer": "18",
+      "source": "Physical_Metallurgy_Hosford",
+      "primary_category": "Properties: Thermal",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 19-7",
+      "question": "Suppose that the average displacement of the electrons relative to the nucleus in a copper atom is $10^{-8} \\AA$ when an electric field is imposed on a copper plate. Calculate the electronic polarization. The atomic number of copper is 29, so there are 29 electrons in each copper atom. The lattice parameter of copper is $3.6151 \\AA$.",
+      "unit": "C/m^2",
+      "answer": "3.93E-07",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_4.17",
+      "question": "Calculate the density of vacant sites (in $\\mathrm{m}^{-3}$ ) in a single crystal of silicon if the fraction of vacant lattice sites is $1 \\times 10^{-7}$. Give your answer as the value of density_of_vacant_sites.",
+      "unit": "m^-3",
+      "answer": "5E+21",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 9.1",
+      "question": "What is the magnitude of the maximum stress that exists at the tip of an internal crack having a radius of curvature of $1.9 \\times 10^{-4} \\mathrm{~mm}\\left(7.5 \\times 10^{-6} \\mathrm{in}\\right.$.) and a crack length of $3.8 \\times 10^{-2} \\mathrm{~mm}\\left(1.5 \\times 10^{-3} \\mathrm{in}\\right.$.) when a tensile stress of $140 \\mathrm{MPa}(20,000 \\mathrm{psi})$ is applied?",
+      "unit": "MPa",
+      "answer": "2800",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Properties: Mechanical",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 9.5",
+      "question": "A specimen of a 4340 steel alloy with a plane strain fracture toughness of $54.8 \\mathrm{MPa} \\sqrt{\\mathrm{~m}}(50 \\mathrm{ksi} \\sqrt{\\mathrm{in}}$. ) is exposed to a stress of 1030 MPa (150,000 psi). Will this specimen experience fracture if the largest surface crack is $0.5 \\mathrm{~mm}(0.02 \\mathrm{in}$.) long? Why or why not? Assume that the parameter Y has a value of 1.0.",
+      "unit": "MPa",
+      "answer": "1380",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 6.5",
+      "question": "Compute the strain-hardening exponent \\(n\\) in $\\sigma_T=K \\varepsilon_T^n$ for an alloy in which a true stress of \\(415 \\mathrm{MPa}(60,000 \\mathrm{psi})\\) produces a true strain of 0.10 ; assume a value of \\(1035 \\mathrm{MPa}(150,000 \\mathrm{psi})\\) for \\(K\\).",
+      "unit": "",
+      "answer": "0.40",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 12.21",
+      "question": "At room temperature the electrical conductivity of PbS is $25(\\Omega-m)^{-1}$, whereas the electron and hole mobilities are 0.06 and $0.02 \\mathrm{~m}^{2} / \\mathrm{V} \\cdot \\mathrm{s}$, respectively. Compute the intrinsic carrier concentration for PbS at room temperature.",
+      "unit": "m^-3",
+      "answer": "1.95E+21",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 22-1",
+      "question": "How much heat must be supplied to 250 g of tungsten to raise its temperature from $25^{\\circ} \\mathrm{C}$ to $650^{\\circ} \\mathrm{C}$? The specific heat of tungsten is $0.032 \\frac{\\mathrm{cal}}{\\mathrm{g} \\cdot \\mathrm{K}}$.",
+      "unit": "cal",
+      "answer": "5000",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.41",
+      "question": "Calculate the density of a particulate composite composed of $50 \\mathrm{vol} \\%$ Mo in a copper matrix. Give your answer as the value of density.",
+      "unit": "Mg/m^3",
+      "answer": "9.58",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Hybrids",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 14.4",
+      "question": "What is the reflectance of single-crystal sapphire, which is widely used as an optical and electronic material? (Sapphire is nearly pure $\\mathrm{Al}_2 \\mathrm{O}_3$.) Give your answer as the value of reflectance.",
+      "unit": "",
+      "answer": "0.0758",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Properties: Optical",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.15",
+      "question": "You are asked to characterize a new semiconductor. If its conductivity at $20^{\\circ} \\mathrm{C}$ is $250 \\Omega^{-1} \\cdot \\mathrm{~m}^{-1}$ and at $100^{\\circ} \\mathrm{C}$ is $1,100 \\Omega^{-1} \\cdot \\mathrm{~m}^{-1}$, what is its band gap, $E_{g}$ ?",
+      "unit": "eV",
+      "answer": "0.349",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 4.16",
+      "question": "The number-average molecular weight of a poly(acrylonitrile-butadiene) alternating copolymer is $1,000,000 \\mathrm{~g} / \\mathrm{mol}$; determine the average number of acrylonitrile and butadiene repeat units per molecule.",
+      "unit": "",
+      "answer": "9333",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 7.47",
+      "question": "The following true stresses produce the corresponding true plastic strains for a brass alloy:\n\n| True Stress (psi) | True Strain |\n| :--: | :--: |\n| 60,000 | 0.15 |\n| 70,000 | 0.25 |\n\nWhat true stress is necessary to produce a true plastic strain of 0.21 ?",
+      "unit": "MPa",
+      "answer": "460",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-31",
+      "question": "Analysis of a nickel casting suggests that $28 \\%$ of the solidification process occurred in a dendritic manner. Calculate the temperature at which nucleation occurred. The specific heat of nickel is $4.1 \\mathrm{~J} /\\left(\\mathrm{cm}^3 \\cdot{ }^{\\circ} \\mathrm{C}\\right)$. Give your answer as the value of nucleation_temperature.",
+      "unit": "°C",
+      "answer": "1265",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 17-29",
+      "question": "An epoxy matrix is reinforced with $40 \\mathrm{vol} \\%$ E-glass fibers to produce a $2-\\mathrm{cm}$ diameter composite that is to withstand a load of $25,000 \\mathrm{~N}$ that is applied parallel to the fiber length. Calculate the stress acting on each fiber. The elastic modulus of the epoxy is $0.4 \\times 10^6 \\mathrm{psi}$. Give your answer as the value of stress_on_fiber_MPa.",
+      "unit": "MPa",
+      "answer": "188",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 2.3",
+      "question": "Zinc has five naturally occurring isotopes: $48.63 \\%$ of ${ }^{64} \\mathrm{Zn}$ with an atomic weight of 63.929 amu; $27.90 \\%$ of ${ }^{66} \\mathrm{Zn}$ with an atomic weight of 65.926 amu; $4.10 \\%$ of ${ }^{67} \\mathrm{Zn}$ with an atomic weight of 66.927 amu; $18.75 \\%$ of ${ }^{68} \\mathrm{Zn}$ with an atomic weight of 67.925 amu; and $0.62 \\%$ of ${ }^{70} \\mathrm{Zn}$ with an atomic weight of 69.925 amu. Calculate the average atomic weight of Zn .",
+      "unit": "amu",
+      "answer": "65.400",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_5.1",
+      "question": "An aluminum 2014 T 6 tube of 75 mm ( 3 in .) outer diameter and 1 mm ( 0.04 in .) thickness is subjected to internal pressure of $8.4 \\mathrm{MPa}\\left(1200 \\mathrm{lb} / \\mathrm{in}^2\\right)$. What is the factor of safety that was taken against failure by yielding when the pipe was designed?",
+      "unit": "",
+      "answer": "1.35",
+      "source": "Materials_and_Process_Selection_for_Engineering_Design_Farag",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 18.14",
+      "question": "“Samarium iron garnet has the formula Sm₃Fe₅O₁₂ which can be written Sm₃ᶜ Fe₂ᵃ Fe₃ᵈ O₁₂, where the subscripts ᵃ, ᶜ, and ᵈ denote the crystallographic a, c, and d sites.  The 2 Fe³⁺ ions on the a‐sites have their spins aligned parallel to those of the 3 Sm³⁺ ions on the c‐sites, and these are antiparallel to the 3 Fe³⁺ ions on the d‐sites.  Given that (1) each cubic unit cell (edge 1.2529 nm) contains eight Sm₃Fe₅O₁₂ formula units, (2) the saturation magnetization Mₛ=1.35×10⁵ A/m, and (3) each Fe³⁺ carries 5 μ_B, compute the number of Bohr magnetons μ_Sm carried by each Sm³⁺ ion.”",
+      "unit": "BM",
+      "answer": "2.86",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 9-4",
+      "question": "A 4-in.-diameter aluminum bar solidifies to a depth of 0.5 in. beneath the surface in 5 minutes. After 20 minutes, the bar has solidified to a depth of 1.5 in. How much time is required for the bar to solidify completely?",
+      "unit": "min",
+      "answer": "31.25",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.26",
+      "question": "A given transistor has a collector current of 5 mA when the emitter voltage is 5 mV. Increasing the emitter voltage to 25 mV (a factor of 5) increases the collector current to 50 mA (a factor of 10). Calculate the collector current produced by further increasing the emitter voltage to 50 mV.",
+      "unit": "mA",
+      "answer": "886",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 7.1",
+      "question": "A tensile stress of $\\sigma = 5 \\text{ kPa}$ is applied parallel to the [432] direction of a cubic crystal. Find the shear stress, $\\tau$, on the $(11\\bar{1})$ plane in the [011] direction.",
+      "unit": "kPa",
+      "answer": "1.76",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Properties: Mechanical",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.13",
+      "question": "The primary reason for introducing ceramic components in automotive engine designs is the possibility of higher operating temperatures and, therefore, improved efficiencies. A by-product of this substitution, however, is mass reduction. For the case of 1.5 kg of cast iron (density $=7.15 \\mathrm{Mg} / \\mathrm{m}^3$ ) being replaced by an equivalent volume of PSZ (density $=5.50 \\mathrm{Mg} / \\mathrm{m}^3$ ), calculate the mass reduction. Give your answer as the value of mass_reduction.",
+      "unit": "kg",
+      "answer": "0.346",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 6.6",
+      "question": "For an aluminum alloy under constant load, the creep rate increased by a factor of 2 when the temperature was increased from $71\\,^\\circ\\text{C}$ to $77\\,^\\circ\\text{C}$. Find the activation energy.",
+      "unit": "kJ/mole",
+      "answer": "116",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.9",
+      "question": "The distribution of the degree of polymerization of a polymer can be represented in tabular form as follows: \n\n\\begin{tabular}{|l|l|l|}\n\\hline $n$ Range & $\\boldsymbol{n}_{\\boldsymbol{i}}$ (Mid value) & Population fraction \\\\\n\\hline 1-100 & 50 & - \\\\\n\\hline 101-200 & 150 & - \\\\\n\\hline 201-300 & 250 & 0.01 \\\\\n\\hline 301-400 & 350 & 0.10 \\\\\n\\hline 401-500 & 450 & 0.21 \\\\\n\\hline 501-600 & 550 & 0.22 \\\\\n\\hline 601-700 & 650 & 0.18 \\\\\n\\hline 701-800 & 750 & 0.12 \\\\\n\\hline 801-900 & 850 & 0.07 \\\\\n\\hline 901-1,000 & 950 & 0.05 \\\\\n\\hline 1,001-1,100 & 1,050 & 0.02 \\\\\n\\hline 1,101-1,200 & 1,150 & 0.01 \\\\\n\\hline 1,201-1,300 & 1,250 & 0.01 \\\\\n\\hline & & $\\sum=1.00$ \\\\\n\\hline\n\\end{tabular}\n\nCalculate the average degree of polymerization for this system.",
+      "unit": "",
+      "answer": "612",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-30",
+      "question": "Determine the maximum allowable temperature that will produce a flux of less than 2000 H atoms $/\\left(\\mathrm{cm}^2 \\cdot \\mathrm{~s}\\right)$ through a BCC iron foil when the concentration gradient is $-5 \\times 10^{16} \\frac{\\text { atoms }}{\\mathrm{cm}^3 \\mathrm{~cm}}$. (Note the negative sign for the flux.)",
+      "unit": "°C",
+      "answer": "-198",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_14.57",
+      "question": "A commercial ceramic magnet, Ferroxcube A, has a hysteresis loss per cycle of $40 \\mathrm{~J} / \\mathrm{m}^3$. Assuming the hysteresis loop is traversed at a frequency of 60 Hz , calculate the power loss for this magnet.",
+      "unit": "kW/m^3",
+      "answer": "2.4",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 3-14",
+      "question": "Calculate the density of MgO. Reference the radius ratio and coordination number to justify the crystal structure, and use the given ionic radii and atomic masses for your calculations. the ionic radii are $r_{\\mathrm{Mg}^{+2}}=0.066 \\mathrm{~nm}$ and $r_{\\mathrm{O}^{-2}}=0.132 \\mathrm{~nm}$, Atomic masses: Mg = 24.31 g mol⁻¹; O = 16.00 g mol⁻¹.",
+      "unit": "g/cm^3",
+      "answer": "4.31",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.33",
+      "question": "Specify an aging temperature for a $95 \\mathrm{Al}-5 \\mathrm{Cu}$ alloy that will produce a maximum of $5 \\mathrm{wt} \\% \\theta$ precipitate. Give your answer as the value of aging_temperature.",
+      "unit": "°C",
+      "answer": "400",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_Example 7.3",
+      "question": "An AISI 1020 steel angle of dimensions $150 \\mathrm{~mm} \\times 150 \\mathrm{~mm} \\times 12 \\mathrm{~mm}(6 \\mathrm{in} . \\times 4 \\mathrm{in} . \\times$ $1 / 2 \\mathrm{in}$.) is to be welded to a steel plate by fillet welds along the edges of the 150 mm leg. The angle should support a load of $270 \\mathrm{kN}(60,000 \\mathrm{lb})$ acting along its length. Determine the lengths of the welds to be specified. The welding electrode used is AWS-AISI E6012 with a tensile strength of $414 \\mathrm{MPa}(60 \\mathrm{ksi})$. Give your answer as the value of weld_length.",
+      "unit": "mm",
+      "answer": "128",
+      "source": "Materials_and_Process_Selection_for_Engineering_Design_Farag",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 11.3",
+      "question": "If ice homogeneously nucleates at $-40^{\\circ} \\mathrm{C}$, calculate the critical radius given values of $-3.1 \\times 10^{8} \\mathrm{~J} / \\mathrm{m}^{3}$ and $25 \\times 10^{-3} \\mathrm{~J} / \\mathrm{m}^{2}$, respectively, for the latent heat of fusion and the surface free energy.",
+      "unit": "nm",
+      "answer": "1.10",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Properties: Thermal",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_15.25",
+      "question": "In an ionic-concentration corrosion cell involving nickel (forming $\\mathrm{Ni}^{2+}$ ), an electrical current of 5 mA is measured. How many Ni atoms per second are oxidized at the anode? Give your answer as the value of Ni_atoms_per_second.",
+      "unit": "s^-1",
+      "answer": "1.56E+16",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 11.8",
+      "question": "It is known that the kinetics of recrystallization for some alloy obeys the Avrami equation, and that the value of $n$ in the exponential is 5.0. If, at some temperature, the fraction recrystallized is 0.30 after 100 min , determine the rate of recrystallization at this temperature.",
+      "unit": "$(\\min )^{-1}$",
+      "answer": "8.76E-03",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 22.4",
+      "question": "Find the angle between the tensile axis and the local neck form in a tension test on material with a strain ratio $R=2$.",
+      "unit": "${}^\\circ$",
+      "answer": "60",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Properties: Mechanical",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.25",
+      "question": "A flywheel shaft is made of 8640 steel. The surface hardness is found to be Rockwell C35. By what percentage would the cooling rate at the point in question have to change in order for the hardness to be increased to a more desirable value of Rockwell C45?",
+      "unit": "%",
+      "answer": "84.6",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.17",
+      "question": "An economical substitute for vitreous silica is a highsilica glass made by leaching the $\\mathrm{B}_2 \\mathrm{O}_3$-rich phase from a two-phase borosilicate glass. (The resulting porous microstructure is densified by heating.) A typical starting composition is $81 \\mathrm{wt} \\% \\mathrm{SiO}_2, 4 \\mathrm{wt} \\% \\mathrm{Na}_2 \\mathrm{O}, 2 \\mathrm{wt} \\%$ $\\mathrm{Al}_2 \\mathrm{O}_3$, and $13 \\mathrm{wt} \\% \\mathrm{~B}_2 \\mathrm{O}_3$. A typical final composition is $96 \\mathrm{wt} \\% \\mathrm{SiO}_2, 1 \\mathrm{wt} \\% \\mathrm{Al}_2 \\mathrm{O}_3$, and $3 \\mathrm{wt} \\% \\mathrm{~B}_2 \\mathrm{O}_3$. How much product (in kilograms) would be produced from 50 kg of starting material, assuming no $\\mathrm{SiO}_2$ is lost by leaching? Give your answer as the value of product_mass.",
+      "unit": "kg",
+      "answer": "42.2",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 3.104",
+      "question": "A hypothetical metal has the BCC crystal structure, a density of $7.24 \\mathrm{~g} / \\mathrm{cm}^{3}$, and an atomic weight of 48.9 $\\mathrm{g} / \\mathrm{mol}$. What is the atomic radius of this metal?",
+      "unit": "nm",
+      "answer": "0.122",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 4.6",
+      "question": "Calculate the grain-size number, $G$, for a micrograph for which you measure $8.04 \\frac{\\text { grains }}{\\text { in. } .^{2}}$ at $100 \\times$.",
+      "unit": "",
+      "answer": "4.01",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Structures: Micro/Nano-structure",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 4.8",
+      "question": "High-density polyethylene may be chlorinated by inducing the random substitution of chlorine atoms for hydrogen.\nDetermine the concentration of Cl (in wt\\%) that must be added if this substitution occurs for $8 \\%$ of all the original hydrogen atoms.",
+      "unit": "wt%",
+      "answer": "29.0",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.11",
+      "question": "What would be the maximum fraction of cross-link sites that would be connected in 1 kg of chloroprene, $\\mathrm{C}_4 \\mathrm{H}_5 \\mathrm{Cl}$, with the addition of 200 g of sulfur? Give your answer as the value of maximum_fraction.",
+      "unit": "",
+      "answer": "0.552",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Elastomers",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_3.6",
+      "question": "The wall thickness of a steel tank is measured monthly, and the loss in thickness is approximately the same each month, $50 \\mathrm{mg} / \\mathrm{dm}^2 / \\mathrm{day}$. What is the useful life of the tank, if the initial thickness is 10 mm and the minimum safe thickness is 6 mm ?",
+      "unit": "years",
+      "answer": "17",
+      "source": "Materials_and_Process_Selection_for_Engineering_Design_Farag",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 12.9",
+      "question": "Calculate the thermal conductivity parallel to continuous, reinforcing fibers in a composite with 60 vol \\% E-glass in a matrix of polyester. [The thermal conductivity of E-glass is $0.97 \\mathrm{~W} /(\\mathrm{m} \\cdot \\mathrm{K})$ and for polyester is $0.17 \\mathrm{~W} /(\\mathrm{m} \\cdot \\mathrm{K})$. Both of these values are for room temperature.]",
+      "unit": "W/(m·K)",
+      "answer": "0.65",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Physical_Metallurgy_Hosford_Example 2.3",
+      "question": "Consider the freezing of pure aluminum. Estimate the temperature gradient in the solid near the liquid-solid interface if the interface moves at $5 \\mathrm{~mm} / \\mathrm{min}$. For aluminum, the thermal conductivity $k=4.8 \\mathrm{Jm} /(\\mathrm{Ks})$, the latent heat of freezing is $397 \\mathrm{~kJ} /$ kg , and the density is $2.7 \\mathrm{mg} / \\mathrm{m}^3$. Give your answer as the value of temperature_gradient.",
+      "unit": "K/m",
+      "answer": "18.6",
+      "source": "Physical_Metallurgy_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.21",
+      "question": "As pointed out in the Feature Box in this chapter, the thermal protection system for NASA's Space Shuttle Orbiter was effective due to its exceptional thermalinsulation properties. Calculate the heat flow (per square meter) across a 50-mm-thick ceramic tile with an outer surface temperature of $700^{\\circ} \\mathrm{C}$ and an inner surface temperature of $30^{\\circ} \\mathrm{C}$, given a thermal conductivity of $0.0837 \\mathrm{~J} /(\\mathrm{s} \\cdot \\mathrm{m} \\cdot \\mathrm{K})$.",
+      "unit": "kW",
+      "answer": "-1.12",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 7.3",
+      "question": "Calculate the steady-state heat transfer rate through a $10-\\mathrm{mm}$-thick sheet of copper for a $50^{\\circ} \\mathrm{C}$ temperature drop from $550^{\\circ} \\mathrm{C}$ to $500^{\\circ} \\mathrm{C}$. Give your answer as the value of heat_transfer_rate.",
+      "unit": "J/m^2*s",
+      "answer": "1.86E+06",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 12.4",
+      "question": "Calculate the number of Schottky defects per cubic meter in potassium chloride at 500℃. The energy required to form each Schottky defect is 2.6 eV, whereas the density for KCl (at 500℃) is 1.955 g/cm³. ",
+      "unit": "defects/m³",
+      "answer": "5.31e+19",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 6.44",
+      "question": "Indium atoms are to be diffused into a silicon wafer using both predeposition and drive-in heat treatments; the background concentration of In in this silicon material is known to be $2 \\times 10^{20}$ atoms $/ \\mathrm{m}^{3}$. The drive-in diffusion treatment is to be carried out at $1175^{\\circ} \\mathrm{C}$ for a period of 2.0 h , which gives a junction depth $x{j}$ of $2.35 \\mu \\mathrm{~m}$. Compute the predeposition diffusion time at $925^{\\circ} \\mathrm{C}$ if the surface concentration is maintained at a constant level of $2.5 \\times 10^{26}$ atoms $/ \\mathrm{m}^{3}$. For the diffusion of In in Si, values of $Q{d}$ and $D{0}$ are $3.63 \\mathrm{eV} /$ atom and $7.85 \\times 10^{-3} \\mathrm{~m}^{2} / \\mathrm{s}$, respectively.",
+      "unit": "h",
+      "answer": "1.53",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 18.1",
+      "question": "For intrinsic gallium arsenide, the room-temperature electrical conductivity is $3 \\times 10^{-7}(\\Omega \\cdot \\mathrm{~m})^{-1}$; the electron and hole mobilities are, respectively, 0.80 and $0.04 \\mathrm{~m}^{2} / \\mathrm{V} \\cdot \\mathrm{s}$. Compute the intrinsic carrier concentration $n_{i}$ at room temperature.",
+      "unit": "$m^{-3}$",
+      "answer": "2.2e12",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.35",
+      "question": "Calculate the density of a fiber-reinforced composite composed of $14 \\mathrm{vol} \\% \\mathrm{Al}_2 \\mathrm{O}_3$ whiskers in a matrix of epoxy. The density of $\\mathrm{Al}_2 \\mathrm{O}_3$ is $3.97 \\mathrm{Mg} / \\mathrm{m}^3$ and of epoxy is $1.1 \\mathrm{Mg} / \\mathrm{m}^3$. Give your answer as the value of density.",
+      "unit": "Mg/m^3",
+      "answer": "1.50",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 11-23",
+      "question": "A Pb-Sn alloy contains $23 \\%$ primary $\\alpha$ and $77 \\%$ eutectic microconstituent immediately after the eutectic reaction has been completed. Determine the composition of the alloy. Give your answer as the value of alloy_composition_percent_Sn.",
+      "unit": "%",
+      "answer": "52",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 3.2",
+      "question": "Calculate the atomic packing factor for the FCC crystal structure.",
+      "unit": "",
+      "answer": "0.74",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Fundamental: Crystal Structure",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 16-26",
+      "question": "A stress of 1000 psi is applied to a polymer that operates at a constant strain; after six months, the stress drops to 850 psi. For a particular application, a part made of the same polymer must maintain a stress of 900 psi after 12 months. What should be the original stress applied to the polymer for this application? Give your answer as the value of original_stress_psi.",
+      "unit": "psi",
+      "answer": "1246",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 10.1",
+      "question": "At $900^{\\circ} \\mathrm{C}$, growth rate, $\\dot{G}$, is a dominant term in the crystallization of a copper alloy. By dropping the system temperature to $400^{\\circ} \\mathrm{C}$, the growth rate drops six orders of magnitude and effectively reduces the crystallization rate to zero. Calculate the activation energy for selfdiffusion in this alloy system.",
+      "unit": "kJ/mol",
+      "answer": "181",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 8.12",
+      "question": "Consider a metal single crystal oriented such that the normal to the slip plane and the slip direction are at angles of $60^{\\circ}$ and $35^{\\circ}$, respectively, with the tensile axis. If the critical resolved shear stress is 6.2 MPa ( 900 psi ), will an applied stress of 12 MPa ( 1750 psi ) cause the single crystal to yield? If not, what stress will be necessary?",
+      "unit": "MPa",
+      "answer": "15.1",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 23-36",
+      "question": "At $800^{\\circ} \\mathrm{C}$, iron oxidizes at a rate of $0.014 \\mathrm{~g} / \\mathrm{cm}^2$ per hour; at $1000^{\\circ} \\mathrm{C}$, iron oxidizes at a rate of $0.0656 \\mathrm{~g} / \\mathrm{cm}^2$ per hour. Assuming a parabolic oxidation rate, determine the maximum temperature at which iron can be held if the oxidation rate is to be less than $0.005 \\mathrm{~g} / \\mathrm{cm}^2$ per hour.",
+      "unit": "°C",
+      "answer": "698",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 7.56",
+      "question": "A three-point bending test was performed on an aluminum oxide specimen having a circular cross section of radius 5.0 mm ( 0.20 in.); the specimen fractured at a load of $3000 \\mathrm{~N}\\left(675 \\mathrm{lb}\\right.$ ) when the distance between the support points was 40 mm (1.6 in.). Another test is to be performed on a specimen of this same material, but one that has a square cross section of 15 mm ( 0.6 in.) length on each edge. At what load would you expect this specimen to fracture if the support point separation is maintained at 40 mm (1.6 in.)?",
+      "unit": "N",
+      "answer": "17200",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 9.15",
+      "question": "The fracture strength of glass may be increased by etching away a thin surface layer. It is believed that the etching may alter surface crack geometry (i.e., reduce the crack length and increase the tip radius). Compute the ratio of the etched and original crack-tip radii for a fourfold increase in fracture strength if half of the crack length is removed.",
+      "unit": "",
+      "answer": "8",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 11.5",
+      "question": "In firing 5 kg of kaolinite, $\\mathrm{Al}_{2}\\left(\\mathrm{Si}_{2} \\mathrm{O}_{5}\\right)(\\mathrm{OH})_{4}$, in a laboratory furnace to produce an aluminosilicate ceramic, how much $\\mathrm{H}_{2} \\mathrm{O}$ is driven off?",
+      "unit": "g",
+      "answer": "698",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.33",
+      "question": "Bearings and other parts requiring exceptionally low friction and wear can be fabricated from an acetal polymer with an addition of polytetrafluoroethylene (PTFE) fibers. The densities of acetal and PTFE are $1.42 \\mathrm{Mg} / \\mathrm{m}^3$ and $2.15 \\mathrm{Mg} / \\mathrm{m}^3$, respectively. If the density of the polymer with additive is $1.54 \\mathrm{Mg} / \\mathrm{m}^3$, calculate the weight percent of the PTFE addition. Give your answer as the value of weight_percent_PTFE.",
+      "unit": "wt%",
+      "answer": "23.0",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_Example 6.9",
+      "question": "Assuming that a turbine blade made of Nimonic 105 alloy had a life of $10,000 \\mathrm{~h}$ at 150 MPa with a service temperature of $810^{\\circ} \\mathrm{C}$, what is the expected life at the same stress but with a service temperature of $750^{\\circ} \\mathrm{C}$ ?  Give your answer as the value of expected_life.",
+      "unit": "h",
+      "answer": "255637",
+      "source": "Materials_and_Process_Selection_for_Engineering_Design_Farag",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.33",
+      "question": "For simplified processing calculations, glass-bottle shaping temperature can be taken as the softening point (at which $\\eta=10^{7.6} \\mathrm{P}$ ), and the subsequent annealing temperature can be taken as the annealing point (at which $\\eta=10^{13.4} \\mathrm{P}$ ). If the glass-bottle processing sequence involves a shaping temperature of $690^{\\circ} \\mathrm{C}$ for a glass with an activation energy for viscous deformation of $470 \\mathrm{~kJ} / \\mathrm{mol}$, calculate the appropriate annealing temperature. Give your answer as the value of annealing_temperature.",
+      "unit": "°C",
+      "answer": "512",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 21-18",
+      "question": "A material has a linear absorption coefficient of $591 \\mathrm{~cm}^{-1}$ for photons of a particular wavelength. Determine the thickness of the material required to absorb $99.9 \\%$ of the photons. Give your answer as the value of required_thickness_cm.",
+      "unit": "cm",
+      "answer": "0.0117",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Materials_Science_and_Engineering_An_Introduction_Callister_Example 12.5",
+      "question": "If electroneutrality is to be preserved, there is a point defects possible in NaCl when a Ca2+ substitutes for an Na+ ion. How many of these defects exist for every Ca2+ ion?",
+      "unit": "",
+      "answer": "1",
+      "source": "Materials_Science_and_Engineering_An_Introduction_Callister",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 5.7",
+      "question": "Calculate the fraction of lattice sites that are Schottky defects for cesium chloride at its melting temperature $\\left(645^{\\circ} \\mathrm{C}\\right)$. Assume an energy for defect formation of 1.86 eV .",
+      "unit": "",
+      "answer": "7.87E-06",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 15.16",
+      "question": "It is desired to produce an aligned carbon fiber-epoxy matrix composite having a longitudinal tensile strength of 500 MPa (72,500 psi). Calculate the volume fraction of fibers necessary if (1) the average fiber diameter and length are $0.01 \\mathrm{~mm}\\left(3.9 \\times 10^{-4} \\mathrm{in}\\right.$.) and $0.5 \\mathrm{~mm}\\left(2 \\times 10^{-2} \\mathrm{in}\\right.$.), respectively; (2) the fiber fracture strength is 4.0 $\\mathrm{GPa}\\left(5.8 \\times 10^{3} \\mathrm{psi}\\right)$; (3) the fiber-matrix bond strength is 25 MPa ( 3625 psi ); and (4) the matrix stress at composite failure is $7.0 \\mathrm{MPa}(1000 \\mathrm{psi})$.",
+      "unit": "",
+      "answer": "0.397",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Hybrids",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 6.33",
+      "question": "The steady-state diffusion flux through a metal plate is $7.8 \\times 10^{-8} \\mathrm{~kg} / \\mathrm{m}^{2} \\cdot \\mathrm{~s}$ at a temperature of $1200^{\\circ} \\mathrm{C}(1473$ K) and when the concentration gradient is $-500 \\mathrm{~kg} / \\mathrm{m}^{4}$. Calculate the diffusion flux at $1000^{\\circ} \\mathrm{C}(1273 \\mathrm{~K})$ for the same concentration gradient and assuming an activation energy for diffusion of $145,000 \\mathrm{~J} / \\mathrm{mol}$.",
+      "unit": "kg/m^2s",
+      "answer": "1.21E-08",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 15.3",
+      "question": "A large-particle composite consisting of tungsten particles within a copper matrix is to be prepared. If the volume fractions of tungsten and copper are 0.70 and 0.30, respectively, estimate the upper limit for the specific stiffness of this composite, given the data that follow.\n\n|  | Specific Gravity | Modulus of Elasticity (GPa) |\n| :-- | :--: | :--: |\n| Copper | 8.9 | 110 |\n| Tungsten | 19.3 | 407 |",
+      "unit": "GPa",
+      "answer": "19.65",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 9.9",
+      "question": "A large plate is fabricated from a steel alloy that has a plane strain fracture toughness of $82.4 \\mathrm{MPa} \\sqrt{\\mathrm{m}}$ ( $75.0 \\mathrm{ksi} \\sqrt{\\mathrm{in}}$.). If the plate is exposed to a tensile stress of 345 MPa (50,000 psi) during service use, determine the minimum length of a surface crack that will lead to fracture. Assume a value of 1.0 for $Y$.",
+      "unit": "mm",
+      "answer": "18.2",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 3.18",
+      "question": "Given r silicon = 0.117 nm, calculate the linear density of atoms along the [111] direction in silicon.",
+      "unit": "$\\frac{\\text{atoms}}{\\mathrm{nm}}$",
+      "answer": "2.14",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 6.11",
+      "question": "When $\\alpha$-iron is subjected to an atmosphere of nitrogen gas, the concentration of nitrogen in the iron, $C{N}$ (in weight percent), is a function of hydrogen pressure, $p{N{2}}$ (in MPa), and absolute temperature (T) according to\n\n$$\nC{\\mathrm{N}}=4.90 \\times 10^{-3} \\sqrt{p{\\mathrm{N}{2}}} \\exp \\left(-\\frac{37,600 \\mathrm{~J} / \\mathrm{mol}}{R T}\\right)\n$$\n\nFurthermore, the values of $D{0}$ and $Q{d}$ for this diffusion system are $5.0 \\times 10^{-7} \\mathrm{~m}^{2} / \\mathrm{s}$ and $77,000 \\mathrm{~J} / \\mathrm{mol}$, respectively. Consider a thin iron membrane $1.5-\\mathrm{mm}$ thick that is at $300^{\\circ} \\mathrm{C}$. Compute the diffusion flux through this membrane if the nitrogen pressure on one side of the membrane is 0.10 MPa ( 0.99 atm ) and that on the other side is 5.0 MPa (49.3 atm).",
+      "unit": "kg/m^2s",
+      "answer": "8.72E-15",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 12.30",
+      "question": "Germanium to which $10^{24} \\mathrm{~m}^{-3}$ As atoms have been added is an extrinsic semiconductor at room temperature, and virtually all the As atoms may be thought of as being ionized (i.e., one charge carrier exists for each As atom). Calculate the electrical conductivity of this material, assuming electron and hole mobilities of 0.1 and $0.05 \\mathrm{~m}^{2} / V$-s, respectively.",
+      "unit": "(\\Omega m)^-1",
+      "answer": "1.6E+04",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 12.5",
+      "question": "A nylon 66 polymer is reinforced with 33 wt $\\%$ glass fiber. Calculate the density of this engineering polymer. (The density of a nylon $66=1.14 \\mathrm{Mg} / \\mathrm{m}^{3}$, and the density of the reinforcing glass $=$ $2.54 \\mathrm{Mg} / \\mathrm{m}^{3}$.)",
+      "unit": "Mg/m^3",
+      "answer": "1.39",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 3.6",
+      "question": "How many unit cells are contained in 1 kg of commercial polyethylene that is $50 \\mathrm{vol} \\%$ crystalline (balance amorphous) and that has an overall product density of $0.940 \\mathrm{Mg} / \\mathrm{m}^3$ ? Give your answer as the value of unit_cells.",
+      "unit": "",
+      "answer": "5.7E+24",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.13",
+      "question": "Given $\\rho_{\\mathrm{Si}} & =2.33 \\mathrm{~g} \\cdot \\mathrm{~cm}^{-3} \\text { with an atomic mass }=28.09 \\mathrm{amu}$ and $n_{e}=14 \\times 10^{15} \\mathrm{~m}^{-3}$, calculate the fraction of Si atoms that provides a conduction electron at room temperature.",
+      "unit": "",
+      "answer": "2.8E-13",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Properties: Thermal",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.27",
+      "question": "If progress in increasing $T_c$ for superconductors had continued at the linear rate followed through 1975, by what year would a $T_c$ of 95 K be achieved? Give your answer as the value of year.",
+      "unit": "",
+      "answer": "2210",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 18.1",
+      "question": "A bar of copper with randomly oriented grains was deformed in tension to a stress, $\\sigma_{\\text{av}}$, which caused plastic deformation and then the load was released. Determine whether a grain oriented with [100] parallel to the tensile axis would be left in a state of residual tension or residual compression. For [100], the Taylor factor, $M=2.449$ and $E=66 \\text{ GPa}$. For randomly oriented copper, $M=3.067$ and $E=128 \\text{ GPa}$. Give your answer as 1 if it would be left in a state of residual tension, 2  if residual compression, and 3 otherwise.",
+      "unit": "",
+      "answer": "1",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 5.8",
+      "question": "Calculate the number of Frenkel defects per cubic meter in silver chloride at $350^{\\circ} \\mathrm{C}$. The energy for defect formation is 1.1 eV , whereas the density for AgCl is $5.50 \\mathrm{~g} / \\mathrm{cm}^{3}$ at $350^{\\circ} \\mathrm{C}$.",
+      "unit": "defects/m^3",
+      "answer": "8.24E+23",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 5.2",
+      "question": "For some hypothetical metal, the equilibrium number of vacancies at $900^{\\circ} \\mathrm{C}$ is $2.3 \\times 10^{25} \\mathrm{~m}^{-3}$. If the density and atomic weight of this metal are $7.40 \\mathrm{~g} / \\mathrm{cm}^{3}$ and $85.5 \\mathrm{~g} / \\mathrm{mol}$, respectively, calculate the fraction of vacancies for this metal at $900^{\\circ} \\mathrm{C}$.",
+      "unit": "",
+      "answer": "4.41E-04",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 15.1",
+      "question": "For a given viscoelastic material, the ratio of initial force to equilibrium force is given by $F_0 / F_\\infty = 1.02$. Find the relaxation-time ratio $\\tau_e / \\tau_\\sigma$ for this material.",
+      "unit": "",
+      "answer": "1.02",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Elastomers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Electronic_Magnetic_and_Optical_Materials_Fulay_Example 6.2",
+      "question": "An LED is driven by a maximum voltage supply of 8 V. For the driving voltage across an LED of $1.8-2.0 \\mathrm{~V}$, what should be the series resistance $\\left(R_{\\mathrm{S}}\\right)$? Assume that the LED current is 16 mA.",
+      "unit": "Ω",
+      "answer": "387.5",
+      "source": "Electronic_Magnetic_and_Optical_Materials_Fulay",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_15.27",
+      "question": "In an ionic-concentration corrosion cell involving chromium, which forms a trivalent ion $\\left(\\mathrm{Cr}^{3+}\\right)$, an electrical current of 10 mA is measured. How many atoms per second are oxidized at the anode? Give your answer as the value of atoms_per_second.",
+      "unit": "s^-1",
+      "answer": "2.08E+16",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.9",
+      "question": "Calculate the rate of heat loss per square meter through the fireclay refractory wall of a furnace operated at $1,000^{\\circ} \\mathrm{C}$. The external face of the furnace wall is at $100^{\\circ} \\mathrm{C}$, and the wall is 10 cm thick. Give your answer as the value of heat_loss_rate.",
+      "unit": "kW",
+      "answer": "-11.7",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 21-40",
+      "question": "What is the minimum accelerating voltage required to produce $K_\\alpha$ x-rays in nickel?",
+      "unit": "V",
+      "answer": "7480",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-35",
+      "question": "A 5 -cm-diameter sphere solidifies in 1050 s . Calculate the solidification time for a 0.3 cm $\\times 10 \\mathrm{~cm} \\times 20 \\mathrm{~cm}$ plate cast under the same conditions. Assume that $n=2$. Give your answer as the value of solidification_time_s.",
+      "unit": "s",
+      "answer": "31.15",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 2.2",
+      "question": "One mole of solid MgO occupies a cube 22.37 mm on a side. Calculate the density of $\\mathrm{MgO}$ (in $\\mathrm{g} / \\mathrm{cm}^{3}$). $ \\text { atomic mass of } \\mathrm{Mg}(\\text { in } \\mathrm{g}) = 24.31g$, $\\text { atomic mass of } \\mathrm{O}(\\text { in } \\mathrm{g}) = 16.00g$.",
+      "unit": "g/cm^3",
+      "answer": "3.60",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Structures: Composites",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.65",
+      "question": "In designing a solid-state device using B-doped Si, it is important that the conductivity not increase more than $10 \\%$ (relative to the value at room temperature) during the operating lifetime. For this factor alone, what is the maximum operating temperature to be specified for this design? Give your answer as the value of maximum_operating_temperature.",
+      "unit": "K",
+      "answer": "317",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 22-8",
+      "question": "A 2-m-long soda-lime glass sheet is produced at $1400^{\\circ} \\mathrm{C}$. Determine its length after it cools to $25^{\\circ} \\mathrm{C}$.",
+      "unit": "m",
+      "answer": "1.975",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Electronic_Magnetic_and_Optical_Materials_Fulay_Example 4.5",
+      "question": "A GaAs n-type sample is doped so that the concentration of electrons is $10^{17} \\mathrm{cm}^{-3}$. What is the value of the $E_{\\mathrm{F}} - E_{\\mathrm{C}}$? Assume that $T=300 \\mathrm{K}$ and that the semiconductor is degenerate. The density of states for GaAs at 300 K is $4.45 \\times 10^{17} \\mathrm{cm}^{-3}$ and $k_{\\mathrm{B}} T=0.026 \\mathrm{eV}$.",
+      "unit": "eV",
+      "answer": "-0.037",
+      "source": "Electronic_Magnetic_and_Optical_Materials_Fulay",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 7.40",
+      "question": "A steel alloy to be used for a spring application must have a modulus of resilience of at least 2.07 MPa (300 psi).  If the Young’s modulus of the steel is 207 GPa, what minimum yield strength must it have?",
+      "unit": "MPa",
+      "answer": "926",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_6.1",
+      "question": "The following three $\\sigma-\\epsilon$ data points are provided for a titanium alloy for aerospace applications: $\\epsilon=0.002778$ (at $\\sigma=300 \\mathrm{MPa}), 0.005556(600 \\mathrm{MPa})$, and $0.009897(900 \\mathrm{MPa})$. Calculate $E$ for this alloy. Give your answer as the value of $E$.",
+      "unit": "GPa",
+      "answer": "108",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 14.12",
+      "question": "Calculate the magnetic moment of a unit cell of copper ferrite. Give your answer as the value of magnetic_moment.",
+      "unit": "\\mu_B",
+      "answer": "8",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.10",
+      "question": "A $\\mathrm{YBa}_{2} \\mathrm{Cu}_{3} \\mathrm{O}_{7}$ superconductor is fabricated in a thin film strip with dimensions $1 \\mu \\mathrm{~m}$ thick $\\times 1 \\mathrm{~mm}$ wide $\\times 10 \\mathrm{~mm}$ long. At 77 K , super conductivity is lost when the current along the long dimension reaches a value of 17 A . What is the critical current density for this thin-film configuration?",
+      "unit": "A/m^2",
+      "answer": "1.7E+10",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Properties: Electrical",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 4.3",
+      "question": "To ensure that the neck in a tensile bar would occur at the middle of the gauge section, the machinist made the bar with a 0.500 in. diameter in the middle of the gauge section and machined the rest of it to a diameter of 0.505 in. After testing, the diameter away from the neck was 0.470 in. Assume that the stress-strain relation follows the power law, $\\sigma = K \\epsilon^n$. What was the value of $n$?",
+      "unit": "",
+      "answer": "0.1473",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 3.20",
+      "question": "Magnesium (Mg) has an HCP crystal structure, a c/a ratio of 1.624, and a density of $1.74 \\mathrm{~g} / \\mathrm{cm}^{3}$. Compute the atomic radius for Mg .",
+      "unit": "nm",
+      "answer": "0.160",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 4-11",
+      "question": "We replace 7.5 atomic percent of the chromium atoms in its BCC crystal with tantalum. X-ray diffraction shows that the lattice parameter is 0.29158 nm . Calculate the density of the alloy. Give your answer as as the value of density_g_per_cm3.",
+      "unit": "g/cm³",
+      "answer": "8.262",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 16-2",
+      "question": "Calculate the amount of benzoyl peroxide $\\left[\\left(\\mathrm{C}_6 \\mathrm{H}_5 \\mathrm{CO}\\right)_2 \\mathrm{O}_2\\right]$ initiator required to produce 1 kg of polyethylene with an average molecular weight of $200,000 \\mathrm{~g} / \\mathrm{mol}$. Each benzoyl peroxide molecule produces two free radicals that are each capable of initiating a polyethylene chain. Assume that $20 \\%$ of the initiator actually is effective and that all termination occurs by the combination mechanism.\n\n**Give your answer as required_initiator_mass.**",
+      "unit": "g",
+      "answer": "6.0",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 3.21",
+      "question": "Find the planar density of atoms in the (111) plane for germanium. Give your answer as the value of planar_density.",
+      "unit": "atoms/nm^2",
+      "answer": "7.27",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 11.7",
+      "question": "Compute the rate of some reaction that obeys Avrami kinetics, assuming that the constants $n$ and $k$ have values of 2.0 and $5 \\times 10-4$, respectively, for time expressed in seconds.",
+      "unit": "$s^{-1}$",
+      "answer": "2.69E-02",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 19-15",
+      "question": "After finding the electrical conductivity of cobalt at $0^{\\circ} \\mathrm{C}$, we decide we would like to double that conductivity. To what temperature must we cool the metal? Give your answer as the value of required_temperature_degC.",
+      "unit": "°C",
+      "answer": "-81.8",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-53",
+      "question": "During freezing of a $\\mathrm{Cu}-\\mathrm{Zn}$ alloy, we find that the composition is nonuniform. By heating the alloy to $600^{\\circ} \\mathrm{C}$ for 3 h , diffusion of zinc helps to make the composition more uniform. What temperature would be required if we wished to perform this homogenization treatment in 30 minutes?",
+      "unit": "°C",
+      "answer": "667",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-69",
+      "question": "Liquid magnesium is poured into a 2 cm $\\times 2 \\mathrm{~cm} \\times 24 \\mathrm{~cm}$ mold and, as a result of directional solidification, all of the solidification shrinkage occurs along the 24 cm length of the casting. Determine the length of the casting immediately after solidification is completed. Give your answer as the value of final_length_cm.",
+      "unit": "cm",
+      "answer": "23.04",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Example 3-12",
+      "question": "Calculate the number of octahedral sites that uniauely belong to one FCC unit cell.",
+      "unit": "",
+      "answer": "4",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Fundamental: Crystal Structure",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.21",
+      "question": "Assuming the $\\mathrm{TiO}_2$ in a $\\mathrm{Li}_2 \\mathrm{O}-\\mathrm{Al}_2 \\mathrm{O}_3-\\mathrm{SiO}_2$ glassceramic is uniformly distributed with a dispersion of $10^{12}$ particles per cubic millimeter and a total amount of $6 \\mathrm{wt} \\%$, what is the average particle size of the $\\mathrm{TiO}_2$ particles? (Assume spherical particles. The density of the glass-ceramic is $2.85 \\mathrm{Mg} / \\mathrm{m}^3$, and the density of the $\\mathrm{TiO}_2$ is $4.26 \\mathrm{Mg} / \\mathrm{m}^3$.) Give your answer as the value of average_particle_size.",
+      "unit": "μm",
+      "answer": "0.0425",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 7.48",
+      "question": "For a brass alloy, the following engineering stresses produce the corresponding plastic engineering strains prior to necking:\n\n| Engineering Stress (MPa) | Engineering Strain |\n| :--: | :--: |\n| 315 | 0.105 |\n| 340 | 0.220 |\n\nOn the basis of this information, compute the engineering stress necessary to produce an engineering strain of 0.28 .",
+      "unit": "MPa",
+      "answer": "343",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-45",
+      "question": "What temperature is required to obtain $0.50 \\% \\mathrm{C}$ at a distance of 0.5 mm beneath the surface of a $0.20 \\%$ C steel in 2 h , when $1.10 \\% \\mathrm{C}$ is present at the surface? Assume that the iron is FCC.",
+      "unit": "°C",
+      "answer": "907",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 17-10",
+      "question": "Yttria $\\left(\\mathrm{Y}_2 \\mathrm{O}_3\\right)$ particles $750 \\AA$ in diameter are introduced into tungsten by internal oxidation. Measurements using an electron microscope show that there are $5 \\times 10^{14}$ oxide particles per $\\mathrm{cm}^3$. Calculate the $\\mathrm{wt} \\% \\mathrm{Y}$ originally in the alloy. The density of $\\mathrm{Y}_2 \\mathrm{O}_3$ is $5.01 \\mathrm{~g} / \\mathrm{cm}^3$. Give your answer as the value of wt_percent_Y.",
+      "unit": "%",
+      "answer": "2.48",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 16.13",
+      "question": "(a) Demonstrate that the CPR is related to the corrosion current density $i\\left(A / \\mathrm{cm}^{2}\\right)$ through the expression\n\n$$\n\\mathrm{CPR}=\\frac{K A i}{n \\rho}\n$$\n\nwhere $K$ is a constant, $A$ is the atomic weight of the metal experiencing corrosion, $n$ is the number of electrons associated with the ionization of each metal atom, and $\\rho$ is the density of the metal.\n(b) Calculate the value of the constant $K$ for the CPR in mpy and $i$ in $\\mu A / \\mathrm{cm}^{2}\\left(10^{-6} \\mathrm{~A} / \\mathrm{cm}^{2}\\right)$.",
+      "unit": "",
+      "answer": "0.129",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_8.11",
+      "question": "The manufacture of a given component requires eight operations in the machine shop. The average setup time per operation is 2.5 h . Average operation time per machine is 7 min . The average nonoperation time needed for handling of workpieces and tools, inspection, delays, and temporary storage is 50 min per operation. Estimate the total time required to get a batch of 100 components through the workshop.",
+      "unit": "h",
+      "answer": "120",
+      "source": "Materials_and_Process_Selection_for_Engineering_Design_Farag",
+      "primary_category": "Structures: Composites",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-13",
+      "question": "Suppose that solid nickel was able to nucleate homogeneously with an undercooling of only $22^{\\circ} \\mathrm{C}$. How many atoms would have to group together spontaneously for this occur? Assume that the lattice parameter of the solid FCC nickel is 0.356 nm. Give your answer as the value of number_of_atoms.",
+      "unit": "",
+      "answer": "1.136E+06",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Physical_Metallurgy_Hosford_Example 14.2",
+      "question": "$\\alpha$-titanium at $20^{\\circ} \\mathrm{C}$ has an hcp crystal structure with $a=0.2950 \\mathrm{~nm}$ and $c=0.4683 \\mathrm{~nm}$ at $20^{\\circ} \\mathrm{C}$. At $900^{\\circ} \\mathrm{C}$, it transforms to $\\beta$-titanium with a bcc crystal structure with $a=0.332$. The average coefficient of thermal expansion of $\\alpha$-titanium is $8.4 \\times 10^{-6} \\mathrm{~K}^{-1}$. Calculate the $\\%$ volume change as $\\beta$-titanium transforms to $\\alpha$-titanium on cooling.\n",
+      "unit": "%",
+      "answer": "-1.4",
+      "source": "Physical_Metallurgy_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 5.41",
+      "question": "For a BCC iron-carbon alloy that contains $0.1 \\mathrm{wt} \\% C$, calculate the fraction of unit cells that contain carbon atoms.\n$A_{\\mathrm{C}}=12.011 \\mathrm{~g} / \\mathrm{mol}$\n$A_{\\mathrm{Fe}}=55.85 \\mathrm{~g} / \\mathrm{mol}$\n$\\varrho_{\\mathrm{C}}=2.25 \\mathrm{~g} / \\mathrm{cm}^3$ \n$\\varrho_{\\mathrm{Fe}}=7.87 \\mathrm{~g} / \\mathrm{cm}^3$",
+      "unit": "atoms/unit cell",
+      "answer": "9.31E-03",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-28",
+      "question": "A 4 -cm-diameter, $0.5-\\mathrm{mm}$-thick spherical container made of BCC iron holds nitrogen at $700^{\\circ} \\mathrm{C}$. The concentration at the inner surface is 0.05 atomic percent and at the outer surface is 0.002 atomic percent. Calculate the number of grams of nitrogen that are lost from the container per hour. Give your answer as the value of grams_lost_per_hour.",
+      "unit": "g/h",
+      "answer": "1.25E-03",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    }
+  ]
+}

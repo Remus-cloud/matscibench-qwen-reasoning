@@ -1,0 +1,187 @@
+{
+  "split": "dev",
+  "seed": 6020,
+  "dataset_sha256": "94b96f0a55b5d58a0f8a9c68799ded8f6627946239e805ac98e060c52399c1ed",
+  "rows": [
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.33",
+      "question": "Calculate the charge density on a capacitor made of cordierite at its breakdown dielectric strength of $3 \\mathrm{kV} / \\mathrm{mm}$. The dielectric constant is 4.5 . Give your answer as the value of charge_density.",
+      "unit": "C/m^2",
+      "answer": "1.2E-04",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 7.19",
+      "question": "Consider a cylindrical specimen of some hypothetical metal alloy that has a diameter of 10.0 mm (0.39 in.). A tensile force of $1500 \\mathrm{~N}(340 \\mathrm{lb})$ produces an elastic reduction in diameter of $6.7 \\times 10^{-4} \\mathrm{~mm}(2.64 \\times$ $10^{-5}$ in.). Compute the elastic modulus of this alloy, given that Poisson's ratio is 0.35 .",
+      "unit": "GPa",
+      "answer": "100",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 20.6",
+      "question": "The compressive yield strength of a polymer is 15 % greater than its tensile yield strength. Calculate the ratio of the yield strength in balance biaxial tension, $\\sigma_b$, to the yield strength in uniaxial tension, $T$, according to equation $(\\sigma_2-\\sigma_3)^2+(\\sigma_3-\\sigma_1)^2+(\\sigma_1-\\sigma_2)^2+2(C-T)(\\sigma_1+\\sigma_2+\\sigma_3)=2CT$. Assuming von Mises yield criterion is $(\\sigma_2-\\sigma_3)^2+(\\sigma_3-\\sigma_1)^2+(\\sigma_1-\\sigma_2)^2+K_1(\\sigma_1+\\sigma_2+\\sigma_3)|\\sigma_1+\\sigma_2+\\sigma_3|=K_2$.",
+      "unit": "",
+      "answer": "0.9328",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 6-22",
+      "question": "(a) A force of $100,000 \\mathrm{~N}$ is applied to an iron bar with a cross-sectional area of $10 \\mathrm{~mm} \\times 20 \\mathrm{~mm}$ and having a yield strength of 400 MPa and a tensile strength of 480 MPa. calculate the maximum force that a 0.2 -in. diameter rod of $\\mathrm{Al}_2 \\mathrm{O}_3$, having a yield strength of $35,000 \\mathrm{psi}$, can withstand with no plastic deformation.",
+      "unit": "N",
+      "answer": "4891",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_14.7",
+      "question": "Silica glass is frequently and incorrectly referred to as quartz. This error is the result of shortening the traditional term fused quartz, which described the original technique of making silica glass by melting quartz powder. What is the percentage error in calculating the reflectance of silica glass by using the index of refraction of quartz? Give your answer as the value of percentage_error.",
+      "unit": "%",
+      "answer": "34.0",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 12-88",
+      "question": "A steel containing $0.8 \\% \\mathrm{C}$ is quenched to produce all martensite. Estimate the volume change that occurs, assuming that the lattice parameter of the austenite is $3.6 \\AA$.  What is the volume change percent?",
+      "unit": "%",
+      "answer": "3",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Electronic_Magnetic_and_Optical_Materials_Fulay_Example 2.9",
+      "question": "A particular single crystal of a semiconducting Si sample, containing a small but deliberately added level of phosphorus (P), provides conductivity with electrons as the majority carriers. Assume that the concentration of P added is $10^{18}$ atoms $/ \\mathrm{cm}^{3}$ and that each P atom provides one electron. Ignore any other possible contributions to the conductivity of this P-doped Si sample. If $\\mu_{\\mathrm{n}}=700 \\mathrm{~cm}^{2} / \\mathrm{V} \\cdot \\mathrm{s}$, what is the resistivity ($\\rho$) of this semiconductor?",
+      "unit": "$\\Omega \\cdot \\mathrm{cm}$",
+      "answer": "8.9E-03",
+      "source": "Electronic_Magnetic_and_Optical_Materials_Fulay",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 8.52",
+      "question": "The tensile strength and number-average molecular weight for two polyethylene materials are as follows:\n\n| Tensile Strength (MPa) | Number-Average Molecular Weight (g/mol) |\n| :--: | :--: |\n| 90 | 20,000 |\n| 180 | 40,000 |\n\nEstimate the number-average molecular weight that is required to give a tensile strength of 140 MPa .",
+      "unit": "g/mol",
+      "answer": "27700",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Polymers",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 17-8",
+      "question": "Nickel containing $2 \\mathrm{wt} \\%$ thorium is produced in powder form, consolidated into a part, and sintered in the presence of oxygen, causing all of the thorium to produce $\\mathrm{ThO}_2$ spheres 80 nm in diameter. Calculate the number of spheres per $\\mathrm{cm}^3$. The density of $\\mathrm{ThO}_2$ is $9.69 \\mathrm{~g} / \\mathrm{cm}^3$. Give your answer as the value of number_of_spheres_per_cm3.",
+      "unit": "per cm³",
+      "answer": "7.8E+13",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 11.10",
+      "question": "The kinetics of the austenite-to-pearlite transformation obeys the Avrami relationship. Using the fraction transformed-time data given here, determine the total time required for $95 \\%$ of the austenite to transform to pearlite:\n\n| Fraction Transformed | Time $(\\mathrm{s})$ |\n| :--: | :--: |\n| 0.2 | 280 |\n| 0.6 | 425 |",
+      "unit": "s",
+      "answer": "603",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 22-11",
+      "question": "An aluminum casting is made using the permanent mold process. In this process, the liquid aluminum is poured into a gray cast iron mold that is heated to $350^{\\circ} \\mathrm{C}$. We wish to produce an aluminum casting that is 15 in . long at $25^{\\circ} \\mathrm{C}$. Calculate the length of the cavity that must be machined into the gray cast iron mold.",
+      "unit": "m",
+      "answer": "15.182",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 5.45",
+      "question": "Germanium (Ge) forms a substitutional solid solution with silicon ( Si ). Compute the weight percent of germanium that must be added to silicon to yield an alloy that contains $2.43 \\times 10^{21}$ Ge atoms per cubic centimeter. The densities of pure Ge and Si are 5.32 and $2.33 \\mathrm{~g} / \\mathrm{cm}^{3}$, respectively.",
+      "unit": "wt%",
+      "answer": "11.7",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "The_Science_And_Engineering_of_Materials_Askeland_Problem 23-8",
+      "question": "An electrode potential in a platinum halfcell is 1.10 V . Determine the concentration of $\\mathrm{Pt}^{4+}$ ions in the electrolyte.",
+      "unit": "g/L",
+      "answer": "0.000034",
+      "source": "The_Science_And_Engineering_of_Materials_Askeland",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 11.2",
+      "question": "A high-strength, low-alloy steel is strengthened by precipitates of VC. If the diameter of the particles is 50 nm, what volume percent particles would be required to increase the strength by 100 MPa? For iron, $G = 80$ GPa, and the atomic diameter is 0.248 nm.",
+      "unit": "%",
+      "answer": "0.099",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "hard"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 17.28",
+      "question": "The two ends of a cylindrical rod of nickel 120.00 mm long and 12.000 mm in diameter are maintained rigid. If the rod is initially at $70^{\\circ} \\mathrm{C}$, to what temperature must it be cooled in order to have a $0.023-\\mathrm{mm}$ reduction in diameter? The values of $v$ and $\\alpha{l}$ for nickel are 0.31 and $13.3 \\times 10^{-6}\\left({ }^{\\circ} \\mathrm{C}\\right)^{-1}$, respectively.",
+      "unit": "${}^{\\circ}\\mathrm{C}$",
+      "answer": "-40",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Fundamentals_of_Materials_Instructors_Example 6.10",
+      "question": "A sheet of BCC iron 2-mm thick was exposed to a carburizing gas atmosphere on one side and a decarburizing atmosphere on the other side at $675^{\\circ} \\mathrm{C}$. After reaching steady state, the iron was quickly cooled to room temperature. The carbon concentrations at the two surfaces of the sheet were determined to be 0.015 and $0.0068 \\mathrm{wt} \\%$, respectively. Compute the diffusion coefficient if the diffusion flux is $7.36 \\times 10^{-9} \\mathrm{~kg} / \\mathrm{m}^{2} \\cdot \\mathrm{~s}$. Hint: Use equation (\\begin{aligned}\n&C_1^{\\prime \\prime}=\\left(\\frac{C_1}{\\frac{C_1}{\\rho_1}+\\frac{C_2}{\\rho_2}}\\right) \\times 10^3\\\\\n&C_2^{\\prime \\prime}=\\left(\\frac{C_2}{\\frac{C_1}{\\rho_1}+\\frac{C_2}{\\rho_2}}\\right) \\times 10^3\n\\end{aligned}) to convert the concentrations from weight percent to kilograms of carbon per cubic meter of iron. The densities of carbon and iron are $2.25 \\mathrm{~g} / \\mathrm{cm}^{3}$ and $7.87 \\mathrm{~g} / \\mathrm{cm}^{3}$. For $0.015 \\mathrm{wt} \\% \\mathrm{C}$",
+      "unit": "m^2/s",
+      "answer": "2.3E-11",
+      "source": "Fundamentals_of_Materials_Instructors",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.21",
+      "question": "An important application of metal conductors in the field of materials processing is in the form of metal wire for resistance-heated furnace elements. Some of the alloys used as thermocouples also serve as furnace elements. For example, consider the use of a $1-\\mathrm{mm}$-diameter chromel wire to produce a $1-\\mathrm{kW}$ furnace coil in a laboratory furnace operated at 110 V . What length of wire is required for this furnace design? (Note: The power of the resistanceheated wire is equal to $I^2 R$, and the resistivity of the chromel wire is $1.08 \\times 10^6 \\Omega \\cdot \\mathrm{~m}$.) Give your answer as the value of length_of_wire.",
+      "unit": "m",
+      "answer": "8.80",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Metals",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.22",
+      "question": "An intrinsic GaAs ( $n$-type) semiconductor contains 100 ppb Se by weight. What is the mole percent Se ? Given: Atomic weight of Se (78.96 g/g. atom), Atomic weight of Ga (69.72 g/mol), Atomic weight of As (74.92 g/mol).",
+      "unit": "mol %",
+      "answer": "1.84E-05",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Semiconductors",
+      "difficulty_level": "easy"
+    },
+    {
+      "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 19.2",
+      "question": "Analysis of 100 tests on a ceramic indicated that 11 specimens failed at 85 MPa or less and that 53 failed at a stress of 100 MPa or less. Estimate the stress that would cause $1$ failure in 10000 tests.",
+      "unit": "MPa",
+      "answer": "39",
+      "source": "Mechanical_Behavior_of_Materials_Hosford",
+      "primary_category": "Materials: Ceramics",
+      "difficulty_level": "medium"
+    },
+    {
+      "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.19",
+      "question": "A novel electronic material involves the dispersion of small silicon particles in a glass matrix. If $4.85 \\times 10^{16}$ particles of Si are dispersed per $\\mathrm{mm}^3$ of glass corresponding to a total content of $5 \\mathrm{wt} \\%$, calculate the average particle size of the quantum dots. (Assume spherical particles and note that the density of the silicate glass matrix is $2.60 \\mathrm{Mg} / \\mathrm{m}^3$.)",
+      "unit": "nm",
+      "answer": "1.30",
+      "source": "Introduction_to_Materials_Science_for_Engineers_Shackelford",
+      "primary_category": "Materials: Glasses",
+      "difficulty_level": "hard"
+    }
+  ]
+}

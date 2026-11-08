@@ -1,0 +1,15 @@
+/results/finetuned/
+/.venv/
+.env
+.env.*
+!/.env.example
+__pycache__/
+*.pyc
+*.log
+*.partial
+*.gguf
+*.safetensors
+!/models/v3-checkpoint-30/adapter_model.safetensors
+*.parquet
+*.zip
+*.tgz

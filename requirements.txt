@@ -1,0 +1,2 @@
+# Optional dependency for the calculator. Replay and scoring use standard Python.
+Pint==0.25.2

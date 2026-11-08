@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MatSciBench · 材料科学推理评测</title>
+  <style>
+    * { box-sizing: border-box }
+    body { margin:0; background:#f8f7f1; color:#202d2b; font:16px/1.6 "DM Sans","Microsoft YaHei",sans-serif }
+    main { width:min(1340px,94%); margin:36px auto 80px }
+    header { border-top:4px solid #176251; border-bottom:1px solid #becbc5; padding:16px 0 }
+    h1 { font-size:clamp(28px,4vw,48px); line-height:1.15; margin:9px 0 }
+    h2 { font-size:22px; margin:.8em 0 .35em }
+    p { margin:.4em 0 }
+    .meta { color:#48635b }
+    .stats,.answers { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(205px,100%),1fr)); gap:14px; margin:18px 0 }
+    .stats>div { border-left:3px solid #99b5a7; padding-left:12px }
+    .stats strong { display:block; font-size:24px }
+    .stats small { color:#48635b }
+    nav { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:24px 0 16px }
+    select,button { font:inherit; color:inherit; background:#fff; border:1px solid #aabbb4; border-radius:5px; padding:6px 10px; max-width:100% }
+    button { cursor:pointer } button:hover { background:#e0eee7 }
+    select { flex:1; min-width:min(240px,100%) }
+    #question { font:20px/1.55 Georgia,serif; white-space:pre-wrap; overflow-wrap:anywhere }
+    article { padding:15px 16px; border:1px solid #c5d1ca; background:#fff; border-radius:6px; min-width:0 }
+    article h3 { margin:0; font-size:16px }
+    .value { font-weight:700; font-size:23px; overflow-wrap:anywhere }
+    .yes { color:#135849 } .no { color:#994c31 }
+    summary { cursor:pointer; color:#285c50; padding:4px 0 }
+    pre { font:14px/1.55 "IBM Plex Mono",Consolas,monospace; white-space:pre-wrap; overflow-wrap:anywhere; margin:.5em 0 }
+    article details { border-top:1px solid #e0e6df }
+    .votes { border-left:3px solid #89a999; padding-left:8px; font-size:14px }
+    table { border-collapse:collapse; margin:.5em 0 1em; font-size:15px }
+    th,td { padding:.35em .85em; border-bottom:1px solid #d5dfd8; text-align:right }
+    th:first-child,td:first-child { text-align:left }
+    .pair-scroll { overflow-x:auto }
+    #trace { padding:0 16px 12px; border-left:3px solid #659a84 }
+    @media(max-width:1000px) { .answers { grid-template-columns:repeat(2,minmax(0,1fr)) } }
+    @media(max-width:650px) { .answers { grid-template-columns:1fr } .stats { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px } .stats>div { padding-left:6px } }
+  </style>
+</head>
+<body><main>
+  <header><div class="meta">DSC6020 · MatSciBench · 正式测试离线回放</div>
+    <h1>材料科学推理评测</h1>
+    <p>qwen3.5-27b · 120 道数值题 · 前三种方法各限每题 16,384 输出 token，五票组每份 CoT 各限 16,384。</p>
+  </header>
+  <section class="stats" id="stats" aria-label="正式测试成绩"></section>
+  <details><summary>五票组与各组的逐题胜负</summary>
+    <table id="paired"><thead><tr><th>对照方法</th><th>五票组改对</th><th>五票组退步</th><th>双方均对</th><th>双方均错</th></tr></thead><tbody></tbody></table>
+  </details>
+  <nav aria-label="选择题目">
+    <label for="picker">题目</label><select id="picker"></select>
+    <button type="button" data-number="1">浓差电池</button>
+    <button type="button" data-number="2">六方晶胞</button>
+    <button type="button" data-number="72">工具复核</button>
+    <button type="button" id="vote-example">五票案例</button>
+  </nav>
+  <section aria-live="polite"><h2 id="heading"></h2><p id="question" lang="en"></p><p class="meta" id="reference"></p></section>
+  <section class="answers" id="answers" aria-label="各组逐题回答"></section>
+  <details><summary>五票怎样选出最终答案？</summary>
+    <p>温度 0.6，五次普通 CoT 独立解题，使用题目指定的同一单位。只有正常结束且末行可解析的数值参与投票。取票数最多的一组，组内任意两票之差不超过两者较大绝对值的 1%，两个零视为相同。若票数相等，取相对跨度较小的一组，再按原始票号顺序打破平局。</p>
+    <p>从选中的组取实际出现过的中位数，偶数票取较低的中位数。三至五票构成多数，两票单独标记。没有一致对时回退到首个有效答案，全部无效则计错。之后才用参考值和正式评分容差判分。</p>
+  </details>
+  <section id="trace"><h2>计算器记录</h2><p id="gate"></p><pre id="worksheet"></pre></section>
+</main>
+<script type="application/json" id="records">/*__RECORDS__*/</script>
+<script>
+  const items = JSON.parse(document.getElementById("records").textContent);
+  const methods = {direct:"Direct Answer", cot:"普通 CoT", gated:"CoT + 条件计算器", sc5:"CoT + Self-Consistency"};
+  const voteNames = {unanimous:"五票一致",majority:"多数票",plurality:"仅两票相符",no_consensus:"无共识 · 回退",no_valid_output:"无有效票"};
+  const $ = id => document.getElementById(id);
+  function element(tag, text, className) {
+    const node = document.createElement(tag);
+    node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+  function show(number) {
+    const item = items[number-1];
+    $("picker").value = String(number);
+    $("heading").textContent = "第 " + number + " 题 · " + item.difficulty_level;
+    $("question").textContent = item.question;
+    $("reference").textContent = "参考值 " + item.answer + " " + item.unit + "　·　" + item.qid;
+    $("answers").replaceChildren();
+    for (const [key, label] of Object.entries(methods)) {
+      const result = item[key];
+      const card = document.createElement("article");
+      card.dataset.method = key;
+      if (!result) {
+        card.append(element("h3",label),element("p","本题尚无本地评测结果","meta"));
+        $("answers").append(card);
+        continue;
+      }
+      card.append(element("h3", label), element("p", result.prediction ?? "未解析到数值", "value"));
+      const verdict = result.correct ? "正确" : "判错";
+      const usage = result.tokens === null ? "用量缺失" : result.tokens.toLocaleString() + " token";
+      card.append(element("p", verdict + " · " + usage, result.correct ? "yes" : "no"));
+      if (key === "sc5") {
+        const v = result.vote;
+        const support = v.support < 2 ? "" : " · 一致票 #" + v.cluster.join("、");
+        const chosen = v.selected_slot ? " · 选取 #" + v.selected_slot : "";
+        card.append(element("p", voteNames[v.state] + support + chosen, "votes"));
+      }
+      for (const [index, response] of result.responses.entries()) {
+        const details = document.createElement("details");
+        let title;
+        if (key === "sc5") {
+          title = "第 " + (index+1) + " 票 · " + (result.samples[index] ?? "无效票");
+          if (index+1 === result.vote.selected_slot) title += " · 最终采用";
+        } else {
+          title = result.responses.length === 1 ? "查看原始回答" : index === 0 ? "查看首轮回答" : "查看工具反馈后的回答";
+        }
+        details.append(element("summary", title), element("pre", response));
+        card.append(details);
+      }
+      $("answers").append(card);
+    }
+    const {tool, gate} = item.gated;
+    $("gate").textContent = tool ? "已执行 · " + gate.formula :
+      gate.reason === "no_request" ? "模型直接提交了答案，本题没有申请计算器。" : "申请未执行 · " + (gate.detail || gate.reason);
+    if (tool) {
+      const magnitude = Math.abs(tool.value);
+      const value = magnitude > 0 && magnitude < 0.001 ? tool.value.toExponential() : String(tool.value);
+      $("worksheet").textContent = tool.worksheet + "\n→ " + value + " " + tool.target_unit;
+    } else {
+      $("worksheet").textContent = "";
+    }
+  }
+  for (const [key,label] of Object.entries(methods)) {
+    const finished = items.filter(item => item[key]);
+    const score = finished.filter(item => item[key].correct).length;
+    const stat = element("div",label);
+    const full = finished.length === items.length;
+    stat.append(element("strong", full ? score + " / " + items.length + " · " + (100*score/items.length).toFixed(1) + "%" :
+      "已评 " + finished.length + " / " + items.length));
+    const known = finished.map(item=>item[key].tokens).filter(n=>n!==null);
+    if (finished.length) stat.append(element("small",(full ? "" : "已答对 " + score + " 题 · ") +
+      known.reduce((sum,n)=>sum+n,0).toLocaleString() + " token" +
+      (known.length===finished.length ? "" : "（完整用量 " + known.length + " 题）")));
+    $("stats").append(stat);
+    if (key !== "sc5") {
+      const row=document.createElement("tr");
+      row.append(element("td",label));
+      for (const [oldScore,newScore] of [[false,true],[true,false],[true,true],[false,false]]) {
+        row.append(element("td",items.filter(q=>q[key].correct===oldScore && q.sc5.correct===newScore).length));
+      }
+      $("paired").querySelector("tbody").append(row);
+    }
+  }
+  items.forEach((item,index) => $("picker").add(new Option((index+1) + " · " + item.question, index+1)));
+  $("picker").addEventListener("change", event => show(Number(event.target.value)));
+  document.querySelectorAll("[data-number]").forEach(button => button.addEventListener("click", () => show(Number(button.dataset.number))));
+  $("vote-example").addEventListener("click", () => {
+    let index = items.findIndex(item=>item.sc5.correct && item.sc5.sample_statuses[0]!=="correct" && item.sc5.vote.support>=3);
+    if (index<0) index = items.findIndex(item=>item.sc5.vote.support<5);
+    show(index<0 ? 1 : index+1);
+    $("answers").querySelector('[data-method="sc5"]').scrollIntoView({block:"nearest"});
+  });
+  show(72);
+</script>
+</body></html>
