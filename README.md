@@ -30,4 +30,19 @@ python src/build_demo.py
 
 我们从同一基准的其他题目中筛选了 120 道监督训练题和 26 道内部验证题，并按教材母题、题干近重复和解题家族筛查与开发集、测试集的重叠。我们在 Qwen3.5-27B 的语言层上训练 LoRA 适配器，使用 4-bit NF4、rank 8、alpha 16 和学习率 3e-5，训练 1 个 epoch，共 30 次参数更新。[底座模型](https://huggingface.co/Qwen/Qwen3.5-27B) · [checkpoint-30 适配器](models/v3-checkpoint-30/)
 
-微调权重已包含在本仓库中，微调模型在完整 120 道测试题上的评测结果尚未获得。
+微调权重已包含在本仓库中。B 已完成同一云机、相同 CoT 设置下的完整 120 题对照，并保存原始回答、运行配置和加载记录。本地离线复算与其说明一致。
+
+| 本轮云机 NF4 对照 | 正确题数 | 准确率 |
+|---|---:|---:|
+| 底座 + CoT | 87/120 | 72.50% |
+| 底座 + V3 LoRA + CoT | 44/120 | 36.67% |
+
+V3 相比本轮底座净减少 43 道正确题，下降 35.83 个百分点。其中 3 题从错变对、46 题从对变错。该结论限定于本轮固定的 NF4 推理环境。上方历史百炼 API 成绩作为独立实验保留。
+
+[B 评测说明与合并记录](docs/B_EVALUATION.md) · [逐题对照](results/b_eval/paired_results.csv) · [云机运行说明](docs/V3_GPU_RUN.md)
+
+在项目根目录离线复算两组新结果：
+
+```sh
+python src/compare_b.py results/b_eval/base_results.jsonl results/b_eval/lora_results.jsonl --output-dir results/b_eval/recomputed
+```

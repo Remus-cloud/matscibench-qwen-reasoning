@@ -32,4 +32,6 @@ Direct 要求只给最终答案。普通 CoT 要求写出关系式、带单位�
 
 发布目录 `models/v3-checkpoint-30/` 包含 PEFT 适配器权重和配置。加载时，先载入上文所列 ModelScope revision 的底座，再用 `PeftModel.from_pretrained(base_model, "models/v3-checkpoint-30")` 挂载适配器。发布版配置使用公开底座名称，适配器权重与训练导出逐字节一致。权重的 SHA-256 为 `5c0b0d93497dabba06a2ae223baef95d984a2c603b3de0620ed178762a507d49`。克隆 Git 仓库后可用 `git lfs pull` 取回权重，本项目提供的交付 ZIP 已包含完整权重文件。[Git LFS 说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
 
-V3 尚无完整 120 道测试题的准确率。后续若评估 LoRA 对正确率的贡献，可在相同推理环境中对底座和挂载适配器的模型做逐题配对比较。
+B 后续完成了相同云机环境下的完整 120 题配对评测。NF4 底座 + CoT 为 87/120，V3 + CoT 为 44/120，准确率下降 35.83 个百分点。3 题从错变对、46 题从对变错、41 题都对、30 题都错。原始记录已在本地离线复算，详见 [B 评测说明](B_EVALUATION.md)。
+
+该轮使用 Python 3.12.3、PyTorch 2.8.0+cu128 和 NVIDIA RTX PRO 6000 Blackwell Server Edition 96 GB。两组均采用 NF4 双重量化、BF16、SDPA、batch 1、seed 6020、greedy、关闭原生 thinking 和每题 16,384 输出 token 上限。每组先用开发题预热，生成计时不含解码。共享编译缓存，耗时差异不能全部归因于模型速度。此处底座成绩与早期百炼 API CoT 的 94/120 分属不同实验，微调贡献按本轮两组配对计算。

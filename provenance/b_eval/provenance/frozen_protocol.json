@@ -1,0 +1,27 @@
+{
+  "status": "frozen_before_formal_test",
+  "source_smoke": "results/b_eval/smoke_v2",
+  "test_count_per_arm": 120,
+  "max_new_tokens": 16384,
+  "do_sample": false,
+  "seed": 6020,
+  "enable_thinking": false,
+  "quantization": "NF4 double, BF16",
+  "attention": "sdpa",
+  "batch_size": 1,
+  "fla_version": "0.4.1",
+  "files": {
+    "src/run_27b.py": "cff0bf3f5d0ed30fea0e0121ab8a2922b32759499c6bf655d7de5eed1a329c66",
+    "src/compare_b.py": "69637965ae959982dbc799898ff9e0c3e058e954115fac2cc33004dd67d3fca0",
+    "src/protocol.py": "749c4984bc81a67d1425a096743969fd6b85b393c999560e534de7cea09b4250",
+    "scripts/b_formal.sh": "48781f0be789f5fb1bd75cbdad88fd55163d45b74b4117e036e1a3e2021ae11d",
+    "data/dev.json": "dc6a96ffa0b7f28923927ac4691498aba1bf65b372f0d3f080484f7eaa92c3aa",
+    "data/test.json": "681efcf2fc6ff360926a4bbf0471743488ec0ca98c4bbebf519e7a7d15aa2a56",
+    "models/lora-adapter/adapter_config.json": "bb05ef3225baf0db5067e7b930786dd548d6e9d7512c3c1352d29600d421e7db"
+  },
+  "smoke_summary_sha256": "fe2c19874cadc8b028c6b5d245f38f56b164a5973860e709800171798e6b5d3d",
+  "notes": "Reuse original data, prompts and grader. Shared Triton cache; latency includes any new-shape compilation. No retraining.",
+  "execution_rhythm": "Run base only. Wait for user notification and result audit before manually launching V3.",
+  "automatic_next_arm": false,
+  "base_launch_script_sha256": "48781f0be789f5fb1bd75cbdad88fd55163d45b74b4117e036e1a3e2021ae11d"
+}

@@ -1,0 +1,267 @@
+{
+  "arm": "lora_cot",
+  "split": "test",
+  "qids": [
+    "Fundamentals_of_Materials_Instructors_Example 16.5",
+    "Fundamentals_of_Materials_Instructors_Example 3.21",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 6.2",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 2-2",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 5.1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_3.21",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.3",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.25",
+    "Physical_Metallurgy_Hosford_Example 3.2",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 19-7",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_4.17",
+    "Fundamentals_of_Materials_Instructors_Example 9.1",
+    "Fundamentals_of_Materials_Instructors_Example 9.5",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 6.5",
+    "Fundamentals_of_Materials_Instructors_Example 12.21",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 22-1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.41",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 14.4",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.15",
+    "Fundamentals_of_Materials_Instructors_Example 4.16",
+    "Fundamentals_of_Materials_Instructors_Example 7.47",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-31",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 17-29",
+    "Fundamentals_of_Materials_Instructors_Example 2.3",
+    "Materials_and_Process_Selection_for_Engineering_Design_Farag_5.1",
+    "Fundamentals_of_Materials_Instructors_Example 18.14",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 9-4",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.26",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 7.1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.13",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 6.6",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.9",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-30",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_14.57",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 3-14",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.33",
+    "Materials_and_Process_Selection_for_Engineering_Design_Farag_Example 7.3",
+    "Fundamentals_of_Materials_Instructors_Example 11.3",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_15.25",
+    "Fundamentals_of_Materials_Instructors_Example 11.8",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 22.4",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.25",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.17",
+    "Fundamentals_of_Materials_Instructors_Example 3.104",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 4.6",
+    "Fundamentals_of_Materials_Instructors_Example 4.8",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.11",
+    "Materials_and_Process_Selection_for_Engineering_Design_Farag_3.6",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 12.9",
+    "Physical_Metallurgy_Hosford_Example 2.3",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.21",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 7.3",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 12.4",
+    "Fundamentals_of_Materials_Instructors_Example 6.44",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 18.1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.35",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 11-23",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 3.2",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 16-26",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 10.1",
+    "Fundamentals_of_Materials_Instructors_Example 8.12",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 23-36",
+    "Fundamentals_of_Materials_Instructors_Example 7.56",
+    "Fundamentals_of_Materials_Instructors_Example 9.15",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 11.5",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.33",
+    "Materials_and_Process_Selection_for_Engineering_Design_Farag_Example 6.9",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.33",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 21-18",
+    "Materials_Science_and_Engineering_An_Introduction_Callister_Example 12.5",
+    "Fundamentals_of_Materials_Instructors_Example 5.7",
+    "Fundamentals_of_Materials_Instructors_Example 15.16",
+    "Fundamentals_of_Materials_Instructors_Example 6.33",
+    "Fundamentals_of_Materials_Instructors_Example 15.3",
+    "Fundamentals_of_Materials_Instructors_Example 9.9",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 3.18",
+    "Fundamentals_of_Materials_Instructors_Example 6.11",
+    "Fundamentals_of_Materials_Instructors_Example 12.30",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 12.5",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 3.6",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.13",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.27",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 18.1",
+    "Fundamentals_of_Materials_Instructors_Example 5.8",
+    "Fundamentals_of_Materials_Instructors_Example 5.2",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 15.1",
+    "Electronic_Magnetic_and_Optical_Materials_Fulay_Example 6.2",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_15.27",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_7.9",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 21-40",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-35",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 2.2",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.65",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 22-8",
+    "Electronic_Magnetic_and_Optical_Materials_Fulay_Example 4.5",
+    "Fundamentals_of_Materials_Instructors_Example 7.40",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_6.1",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 14.12",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_Example 13.10",
+    "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 4.3",
+    "Fundamentals_of_Materials_Instructors_Example 3.20",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 4-11",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 16-2",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 3.21",
+    "Fundamentals_of_Materials_Instructors_Example 11.7",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 19-15",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-53",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-69",
+    "The_Science_And_Engineering_of_Materials_Askeland_Example 3-12",
+    "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.21",
+    "Fundamentals_of_Materials_Instructors_Example 7.48",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-45",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 17-10",
+    "Fundamentals_of_Materials_Instructors_Example 16.13",
+    "Materials_and_Process_Selection_for_Engineering_Design_Farag_8.11",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 9-13",
+    "Physical_Metallurgy_Hosford_Example 14.2",
+    "Fundamentals_of_Materials_Instructors_Example 5.41",
+    "The_Science_And_Engineering_of_Materials_Askeland_Problem 5-28"
+  ],
+  "data_sha256": "681efcf2fc6ff360926a4bbf0471743488ec0ca98c4bbebf519e7a7d15aa2a56",
+  "protocol_sha256": "749c4984bc81a67d1425a096743969fd6b85b393c999560e534de7cea09b4250",
+  "runner_sha256": "cff0bf3f5d0ed30fea0e0121ab8a2922b32759499c6bf655d7de5eed1a329c66",
+  "upstream_commit": "4b819499693dd6dfb91a0e96fcb53e49ae88589e",
+  "materials_sha256": "ea14222ef92fd9fbfd91cd5e5ae0bf6586cc643614d1f048ac4a856324a1ceec",
+  "base_revision": "8ee5435f4c700c6d8d4bb69efbf2e60c46b3e23e",
+  "base_path": "/root/autodl-tmp/dsc6020-b/models/Qwen3.5-27B",
+  "base_file_stats": {
+    ".gitattributes": [
+      3064,
+      1794215401039452057
+    ],
+    "LICENSE": [
+      11343,
+      1794215401079452435
+    ],
+    "README.md": [
+      92417,
+      1794215400887450619
+    ],
+    "chat_template.jinja": [
+      7756,
+      1794215401071452360
+    ],
+    "config.json": [
+      4134,
+      1794215401467456107
+    ],
+    "configuration.json": [
+      51,
+      1794215401507456485
+    ],
+    "generation_config.json": [
+      244,
+      1794215401591457280
+    ],
+    "merges.txt": [
+      3353259,
+      1794215401751458794
+    ],
+    "model.safetensors-00001-of-00011.safetensors": [
+      5263851872,
+      1794216237114285210
+    ],
+    "model.safetensors-00002-of-00011.safetensors": [
+      5347741440,
+      1794218123319605852
+    ],
+    "model.safetensors-00003-of-00011.safetensors": [
+      5347741504,
+      1794218336725726326
+    ],
+    "model.safetensors-00004-of-00011.safetensors": [
+      5347741504,
+      1794216110302682623
+    ],
+    "model.safetensors-00005-of-00011.safetensors": [
+      5347741504,
+      1794218384382089209
+    ],
+    "model.safetensors-00006-of-00011.safetensors": [
+      5347741504,
+      1794218199324465573
+    ],
+    "model.safetensors-00007-of-00011.safetensors": [
+      5347741496,
+      1794218460472425714
+    ],
+    "model.safetensors-00008-of-00011.safetensors": [
+      5368714128,
+      1794218075282991955
+    ],
+    "model.safetensors-00009-of-00011.safetensors": [
+      5347745520,
+      1794218480944550827
+    ],
+    "model.safetensors-00010-of-00011.safetensors": [
+      5347749200,
+      1794218527884819076
+    ],
+    "model.safetensors-00011-of-00011.safetensors": [
+      2148512760,
+      1794217393934387210
+    ],
+    "model.safetensors.index.json": [
+      126601,
+      1794216254173766815
+    ],
+    "preprocessor_config.json": [
+      390,
+      1794216254229765139
+    ],
+    "tokenizer.json": [
+      12807982,
+      1794216261589546362
+    ],
+    "tokenizer_config.json": [
+      16710,
+      1794216255365731185
+    ],
+    "video_preprocessor_config.json": [
+      385,
+      1794216255689721512
+    ],
+    "vocab.json": [
+      6722759,
+      1794216264265467527
+    ]
+  },
+  "adapter": {
+    "path": "/root/autodl-tmp/dsc6020-b/project/models/lora-adapter",
+    "weights_sha256": "5c0b0d93497dabba06a2ae223baef95d984a2c603b3de0620ed178762a507d49",
+    "config_sha256": "bb05ef3225baf0db5067e7b930786dd548d6e9d7512c3c1352d29600d421e7db"
+  },
+  "seed": 6020,
+  "do_sample": false,
+  "max_new_tokens": 16384,
+  "enable_thinking": false,
+  "quantization": "NF4 double quantization, BF16 compute",
+  "attention": "sdpa",
+  "batch_size": 1,
+  "warmup_tokens": 64,
+  "python": "3.12.3",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_bytes": 101975851008,
+  "cuda": "12.8",
+  "tf32": false,
+  "optional_kernels": {
+    "flash-linear-attention": "0.4.1",
+    "fla-core": "0.4.1",
+    "causal-conv1d": null,
+    "triton": "3.4.0"
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.22.2",
+    "peft": "0.19.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0"
+  }
+}

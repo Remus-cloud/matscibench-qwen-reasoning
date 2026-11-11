@@ -1,0 +1,43 @@
+这是实际运行代码包，基于原项目，不含 A 原版、旧版本或大型模型权重。
+
+原项目：https://github.com/Remus-cloud/matscibench-qwen-reasoning
+固定提交：4b819499693dd6dfb91a0e96fcb53e49ae88589e
+底座：Qwen/Qwen3.5-27B，revision 8ee5435f4c700c6d8d4bb69efbf2e60c46b3e23e。
+V3：原作者已有 LoRA；权重 SHA-256 为 5c0b0d93497dabba06a2ae223baef95d984a2c603b3de0620ed178762a507d49。
+未重新训练或修改权重。
+
+文件用途
+src/：实际运行与统计所用的 4 个 Python 文件。
+data/：复算所需的固定题集。
+provenance/materials_verified.json：指定模型材料与数据校验记录。
+provenance/frozen_protocol.json：正式运行前冻结的参数及文件哈希。
+provenance/environment.txt：实际云机依赖清单，其中包含原云机路径，不能直接当通用安装命令。
+
+离线复算（无需 GPU）
+把本包和“02_交给C.zip”解压到同一目录，得到“实际运行代码”和“C分析文件”两个文件夹。在该目录执行：
+python3 实际运行代码/src/compare_b.py C分析文件/base_results.jsonl C分析文件/lora_results.jsonl --output-dir 复算结果
+需要 Python 3.9 或更高版本，仅使用标准库。该命令不调用模型。汇总应为底座 87/120、V3 44/120。
+
+重新生成答案（本轮工作已完成，无需重复运行）
+run_27b.py 是实际执行版，不是改写成独立安装程序的新版本。它依赖原项目 Git 仓库、指定权重、GPU 环境以及项目父目录 logs/materials_verified.json。
+在原项目固定提交中放入 src/ 下的文件，把本包 provenance/materials_verified.json 放回项目父目录 logs/，按清单恢复模型与环境，重新运行时使用新的输出目录。
+两组实际命令形式如下，模型目录按实际位置替换：
+python src/run_27b.py --model /模型目录/Qwen3.5-27B --split test --max-new-tokens 16384 --output results/新的目录/base_results.jsonl
+python src/run_27b.py --model /模型目录/Qwen3.5-27B --adapter models/lora-adapter --split test --max-new-tokens 16384 --output results/新的目录/lora_results.jsonl
+环境变量沿用 HF_HUB_OFFLINE=1、TRANSFORMERS_OFFLINE=1、HF_DEACTIVATE_ASYNC_LOAD=1。正式原运行使用 --resume，但两组均一次完成，没有实际补问。
+
+实际运行代码与修改说明
+
+src/run_27b.py：在 A 的 run_27b.py 上修改，保持实际执行时的文件名和内容。
+第 17–36、45–64、90–146 行：配置和材料核验、逐题可靠保存、同配置续跑及会话记录。
+第 157–188 行：检查底座未挂 LoRA，核验 V3 已加载的 992 个张量并记录加载状态。
+第 39–42 行：A 原来将所有非 EOS 结束记为 length；本版仅到达输出上限才记 length，其余记 unknown。正式两组 unknown 均为 0。
+第 194–205 行：保存完整提示和 Token ID；生成前同步 GPU；耗时排除解码且不再舍入；保存回答时不做 strip，原评分函数仍执行原有 strip。
+第 73、82–85、116、153、207–208 行：固定五道开发题试跑，设 seed 6020、显式 SDPA，并加入最多 64 Token 的开发题预热。两组采用相同设置，正式测试前已冻结。
+第 209–221 行：逐题日志及完成、失败记录保留，用于验证实际执行。
+
+src/compare_b.py：B 新增。对比本次新跑的底座和 V3，检查条件一致性，调用原评分函数，汇总准确率、错误、Token、耗时及逐题变化。
+原因：原 compare.py 会对照作者的历史实验，不直接完成本次两组新结果的配对比较。
+src/compare.py、src/protocol.py：原作者文件，文件名与内容未改。
+data/dev.json、data/test.json：原作者固定 20 道开发题、120 道测试题，文件名与内容未改。
+运行时还新增过 tests/test_b_eval.py 并通过 8 项验证；本次交付只保留评测必需代码，不再附测试、进度工具或过程备份。

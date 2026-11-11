@@ -1,0 +1,193 @@
+{
+  "audit_passed": true,
+  "checks": {
+    "paired_configs_identical_except_arm_and_adapter": true,
+    "frozen:src/run_27b.py": true,
+    "frozen:src/compare_b.py": true,
+    "frozen:src/protocol.py": true,
+    "frozen:scripts/b_formal.sh": true,
+    "frozen:data/dev.json": true,
+    "frozen:data/test.json": true,
+    "frozen:models/lora-adapter/adapter_config.json": true,
+    "original_unchanged:src/protocol.py": true,
+    "original_unchanged:src/compare.py": true,
+    "original_unchanged:data/test.json": true,
+    "original_unchanged:data/dev.json": true,
+    "local_matches_executed_code:src/run_27b.py": true,
+    "local_matches_executed_code:src/compare_b.py": true,
+    "base_preserved_since_first_audit": true,
+    "effective_generate_overrides_defaults": true,
+    "base:120_unique_ordered_questions": true,
+    "base:conditions": true,
+    "base:hashes": true,
+    "base:single_completed_session": true,
+    "base:config_session_consistency": true,
+    "base:actual_adapter_assignment": true,
+    "base:all_prompts_raw_answers_tokens_stops_and_times_checked": true,
+    "base:complete_no_unknown_finish": true,
+    "lora:120_unique_ordered_questions": true,
+    "lora:conditions": true,
+    "lora:hashes": true,
+    "lora:single_completed_session": true,
+    "lora:config_session_consistency": true,
+    "lora:actual_adapter_assignment": true,
+    "lora:all_prompts_raw_answers_tokens_stops_and_times_checked": true,
+    "lora:complete_no_unknown_finish": true,
+    "paired_runtime:generation_config": true,
+    "paired_runtime:chat_template_sha256": true,
+    "paired_runtime:eos_ids": true,
+    "paired_actual_prompts_and_input_lengths": true
+  },
+  "summaries": {
+    "base": {
+      "planned": 120,
+      "answered": 120,
+      "coverage": 1.0,
+      "complete": true,
+      "correct": 87,
+      "accuracy": 0.725,
+      "missing": [],
+      "unknown_finish_count": 0,
+      "categories": {
+        "correct": 87,
+        "numeric": 30,
+        "format": 0,
+        "truncated": 3,
+        "unknown": 0
+      },
+      "generated_tokens": 220410,
+      "token_coverage": 120,
+      "mean_tokens": 1836.75,
+      "generation_seconds": 15659.20346610155,
+      "time_coverage": 120,
+      "mean_seconds": 130.49336221751292,
+      "median_seconds": 63.133331252261996,
+      "session_elapsed_seconds": 15681.203104713,
+      "load_seconds": 15.33718154579401,
+      "warmup_tokens": 64,
+      "source_sha256": "eed9c57ce82c897670bd260bc5929894bb2cff8be5f2d4d34cdf5f77cf4fb2c7",
+      "started_at_beijing": "2026-11-09T18:50:51.966513+08:00",
+      "finished_at_beijing_derived": "2026-11-09T23:12:13.169618+08:00"
+    },
+    "lora": {
+      "planned": 120,
+      "answered": 120,
+      "coverage": 1.0,
+      "complete": true,
+      "correct": 44,
+      "accuracy": 0.36666666666666664,
+      "missing": [],
+      "unknown_finish_count": 0,
+      "categories": {
+        "correct": 44,
+        "numeric": 65,
+        "format": 5,
+        "truncated": 6,
+        "unknown": 0
+      },
+      "generated_tokens": 113465,
+      "token_coverage": 120,
+      "mean_tokens": 945.5416666666666,
+      "generation_seconds": 14291.464194800705,
+      "time_coverage": 120,
+      "mean_seconds": 119.09553495667254,
+      "median_seconds": 5.884342267177999,
+      "session_elapsed_seconds": 14316.89928569924,
+      "load_seconds": 20.506503003649414,
+      "warmup_tokens": 27,
+      "source_sha256": "ffd9bfe16f6961f12ca145c5019e24d731155baea118d1ac0c866aecdba9e8bd",
+      "started_at_beijing": "2026-11-10T23:03:08.390026+08:00",
+      "finished_at_beijing_derived": "2026-11-11T03:01:45.289312+08:00"
+    }
+  },
+  "truncation_cases": {
+    "base": [
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_12.25",
+        "jsonl_line": 9,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.65",
+        "jsonl_line": 94,
+        "generated_tokens": 16384,
+        "last_token_id": 353,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Mechanical_Behavior_of_Materials_Hosford_mechanical behaviors Example 4.3",
+        "jsonl_line": 101,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      }
+    ],
+    "lora": [
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_10.33",
+        "jsonl_line": 37,
+        "generated_tokens": 16384,
+        "last_token_id": 13948,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Materials_and_Process_Selection_for_Engineering_Design_Farag_3.6",
+        "jsonl_line": 49,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_PP 3.6",
+        "jsonl_line": 81,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_13.27",
+        "jsonl_line": 83,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Introduction_to_Materials_Science_for_Engineers_Shackelford_11.21",
+        "jsonl_line": 111,
+        "generated_tokens": 16384,
+        "last_token_id": 15,
+        "last_token_is_eos": false,
+        "correct": false
+      },
+      {
+        "qid": "Fundamentals_of_Materials_Instructors_Example 16.13",
+        "jsonl_line": 115,
+        "generated_tokens": 16384,
+        "last_token_id": 303,
+        "last_token_is_eos": false,
+        "correct": false
+      }
+    ]
+  },
+  "archive_sha256": "626f248ade63cc065d72db788a33f268013517665dd6fe61b0e447195f3f91de",
+  "generation_defaults_and_effective_kwargs": {
+    "model_default_do_sample": true,
+    "effective_do_sample": false,
+    "effective_max_new_tokens": 16384,
+    "basis": "Frozen executed runner explicitly overrides model defaults in model.generate; actual saved output token counts and finish markers checked."
+  },
+  "cloud_local_recalculation_matches": {
+    "paired_csv_sha256": "22eb5631f2191ced80d2db86c3a6d2bc1345512c921936be331065006dcda40e",
+    "normalized_summary_sha256": "10c71453198da1053bd552ddc8799506897add6981d5924b92385f42df0cec82",
+    "normalization": "Exclude source_files machine-specific absolute paths only."
+  }
+}
