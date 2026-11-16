@@ -1,4 +1,4 @@
-"""Run the five local conditions on a llama.cpp server with the D3 adapter loaded."""
+"""Run the five local conditions on a llama.cpp server with the materials-science LoRA adapter loaded."""
 import argparse
 import hashlib
 import random
@@ -19,11 +19,11 @@ def evaluate(r,folder,sig,adapter,first):
     from extract_materials import analyze
     from materials_role_binding import check
     n=r["n"];blind=[];answers={}
-    for k in ("direct","cot","d3","sc"):
+    for k in ("direct","cot","finetuned","sc"):
         is_sc=k=="sc";samples=[]
         for i in range(1,6 if is_sc else 2):
             raw=turn(folder/(f"{k}-{i}.json"),messages(r,"direct" if k=="direct" else "cot"),16384,.6 if is_sc else 0,
-                     6020000+n*10+i if is_sc else 6020,[dict(id=adapter,scale=.25)] if k=="d3" else [],sig)
+                     6020000+n*10+i if is_sc else 6020,[dict(id=adapter,scale=.25)] if k=="finetuned" else [],sig)
             samples.append(dict(text=raw["content"],finish="length" if raw["stop"]=="limit" else "stop"))
         if is_sc:
             # Numeric extraction uses the submitted FINAL line. Scoring follows selection.
@@ -31,11 +31,11 @@ def evaluate(r,folder,sig,adapter,first):
             answers[k]=dict(samples=samples,vote=v,p=predictions[slot-1] if slot else None)
         else: answers[k]=dict(**samples[0],p=submitted(samples[0]))
     prompts=read(ROOT/"src/judge_prompts.json")
-    arms=("cot","d3")
+    arms=("cot","finetuned")
     for i,a in enumerate((first,next(s for s in arms if s!=first)),1):
         b=next(s for s in arms if s!=a)
         for arm in (a,b):
-            if re.search(r"\bQwen\b|\bD3\b|<\|im_(?:start|end)\|>|</?candidate_[AB]>",answers[arm]["text"],re.I):
+            if re.search(r"\bQwen\b|\bLoRA\b|\bfine[- ]?tuned model\b|<\|im_(?:start|end)\|>|</?candidate_[AB]>",answers[arm]["text"],re.I):
                 raise ValueError("Candidate contains identifying text or a delimiter")
         body=f"Problem\n{r['question']}\n\nRequested answer unit: {r['unit'] or '(none specified)'}\n\n<candidate_A>\n{answers[a]['text']}\n</candidate_A>\n\n<candidate_B>\n{answers[b]['text']}\n</candidate_B>"
         raw=completion(folder/f"blind-{i}.json",[dict(role="system",content=prompts["blind"]),dict(role="user",content=body)],prompts["blind_grammar"],768,sig)
@@ -48,7 +48,7 @@ def evaluate(r,folder,sig,adapter,first):
         if e["status"]=="calculated":checks.append(dict(route=name,values={"Value":e["calculation"]["value"]}))
     chosen,route,_=select({k:answers[k]["p"] for k in arms},blind,checks)
     scores={}
-    for k in ("direct","cot","d3","sc"):
+    for k in ("direct","cot","finetuned","sc"):
         x=answers[k]
         if k=="sc":
             idx=x["vote"]["selected_slot"]
@@ -67,13 +67,13 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument("--question",type=int,choices=range(1,121),metavar="1..120")
     ap.add_argument("--out",type=Path,default=ROOT/"runs/evaluation")
     args=ap.parse_args()
-    recorded=read(ROOT/"results/protocol.json");weights=read(ROOT/"models/d3/weights.json")
+    recorded=read(ROOT/"results/protocol.json");weights=read(ROOT/"models/materials-lora/weights.json")
     props=api("/props")
     if file_hash(props["model_path"])!=recorded["base"]:raise ValueError("Base GGUF differs from the recorded BF16 export")
-    matches=[a for a in api("/lora-adapters") if file_hash(a["path"])==weights["files"]["d3-f32.gguf"]]
-    if len(matches)!=1:raise ValueError("Load the packaged D3 GGUF using --lora and --lora-init-without-apply")
+    matches=[a for a in api("/lora-adapters") if file_hash(a["path"])==weights["files"]["adapter-f32.gguf"]]
+    if len(matches)!=1:raise ValueError("Load the packaged LoRA GGUF using --lora and --lora-init-without-apply")
     sig=digest([recorded,weights,props.get("build_info"),{p.name:file_hash(p) for p in sorted((ROOT/"src").glob("*.py"))},file_hash(ROOT/"src/judge_prompts.json")])
-    positions=["cot"]*60+["d3"]*60;random.Random(6020).shuffle(positions)
+    positions=["cot"]*60+["finetuned"]*60;random.Random(6020).shuffle(positions)
     split=ROOT/"data/test120.json"
     if hashlib.sha256(split.read_text(encoding="utf8").encode()).hexdigest()!=recorded["test_split"]:
         raise ValueError("Evaluation split differs from the frozen benchmark")

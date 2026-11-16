@@ -1106,6 +1106,5 @@
     "peft": "0.18.1",
     "safetensors": "0.8.0"
   },
-  "curriculum_arm": "D3",
   "loss_weighting": "weighted assistant-token NLL normalized within each 8-example update"
 }

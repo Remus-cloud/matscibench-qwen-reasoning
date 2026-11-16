@@ -4,6 +4,6 @@
   "scale": 0.25,
   "files": {
     "adapter_model.safetensors": "7f9591013461fd7ebf66fff6b6a3b9b7eb79ab5784f275d1d51965753c60e4f2",
-    "d3-f32.gguf": "dbd5fd7abb9ced9f4006e389678456f6f895b10fd8c829e53d77093bfe186b32"
+    "adapter-f32.gguf": "dbd5fd7abb9ced9f4006e389678456f6f895b10fd8c829e53d77093bfe186b32"
   }
 }

@@ -12,6 +12,6 @@ runtime/
 finetuning/runs/
 *.gguf
 *.safetensors
-!models/d3/d3-f32.gguf
-!models/d3/adapter_model.safetensors
+!models/materials-lora/adapter-f32.gguf
+!models/materials-lora/adapter_model.safetensors
 

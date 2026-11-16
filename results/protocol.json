@@ -9,9 +9,9 @@
     "direct": 16,
     "cot": 69,
     "sc": 77,
-    "d3": 66,
+    "finetuned": 66,
     "final": 85
   },
   "questions": 120,
-  "archive_sha256": "f5851bbb574cf4050e5f0a4b995247175de71ab7d2f34f603b57695aa9d01235"
+  "archive_sha256": "523c3ea050f2b2bc06a792becad7899903bb3df6985267c5381f9c6ef6281795"
 }

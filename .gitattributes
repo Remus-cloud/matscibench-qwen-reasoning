@@ -8,6 +8,6 @@
 data/test120.json -text
 finetuning/data/*.jsonl -text
 models/chat_template.jinja -text
-models/d3/*.safetensors filter=lfs diff=lfs merge=lfs -text
-models/d3/*.gguf filter=lfs diff=lfs merge=lfs -text
+models/materials-lora/*.safetensors filter=lfs diff=lfs merge=lfs -text
+models/materials-lora/*.gguf filter=lfs diff=lfs merge=lfs -text
 

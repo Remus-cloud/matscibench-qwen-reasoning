@@ -10,7 +10,7 @@ from protocol import grade
 from voting import vote
 
 ROOT = Path(__file__).resolve().parents[1]
-METHODS = ("direct", "cot", "sc", "d3", "final")
+METHODS = ("direct", "cot", "sc", "finetuned", "final")
 
 def read_rows():
     archive = ROOT / "results/questions.jsonl.gz"
@@ -37,12 +37,12 @@ def select(predictions,blind,checks):
     same=both[0] and both[0]==both[1]
     picked=both[0] if same else "cot"
     route="blind" if same else "default"
-    if predictions["cot"] is None and predictions["d3"] is not None and picked!="d3":
-        picked,route="d3","format"
+    if predictions["cot"] is None and predictions["finetuned"] is not None and picked!="finetuned":
+        picked,route="finetuned","format"
     chosen_check=None
-    if all(predictions[k] is not None for k in ("cot","d3")):
+    if all(predictions[k] is not None for k in ("cot","finetuned")):
         for i,c in enumerate(checks):
-            statuses={k:classify(float(predictions[k]),c["values"]) for k in ("cot","d3")}
+            statuses={k:classify(float(predictions[k]),c["values"]) for k in ("cot","finetuned")}
             if set(statuses.values())=={"passes","fails"}:
                 arm=next(k for k,status in statuses.items() if status=="passes")
                 if arm!=picked: picked,route,chosen_check=arm,c["route"],i
@@ -54,7 +54,7 @@ def audit(rows):
     for n,r in enumerate(rows,1):
         assert n==r["n"]
         arms=r["answers"]
-        for k in ("direct","cot","d3"):
+        for k in ("direct","cot","finetuned"):
             a=arms[k]
             assert grade(a["text"],str(r["gold"]),a["finish"])==(a["p"],a["ok"],a["status"])
         sc=arms["sc"]; samples=sc["samples"]
@@ -64,11 +64,11 @@ def audit(rows):
         slot=sc["vote"]["selected_slot"]
         assert sc["p"]==(votes[slot-1] if slot else None)
         assert sc["ok"]==(grade(samples[slot-1]["text"],str(r["gold"]),samples[slot-1]["finish"])[1] if slot else False)
-        selected,route,check=select({k:arms[k]["p"] for k in ("cot","d3")},r["blind"],r["checks"])
+        selected,route,check=select({k:arms[k]["p"] for k in ("cot","finetuned")},r["blind"],r["checks"])
         assert (selected,route,check)==(r["selected"],r["route"],r["check"])
         assert r["final_ok"]==arms[selected]["ok"]
         for k in METHODS: totals[k]+=r["final_ok"] if k=="final" else arms[k]["ok"]
-    assert dict(totals)==dict(direct=16,cot=69,sc=77,d3=66,final=85)
+    assert dict(totals)==dict(direct=16,cot=69,sc=77,finetuned=66,final=85)
     return totals
 
 if __name__=="__main__":
