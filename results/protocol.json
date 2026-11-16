@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "benchmark": "MatSciBench",
+  "base": "4f851fbf3f5efe9fe17d332aa7633e06f0cd6b8ca29cd74f0a78c55461734002",
+  "test_split": "681efcf2fc6ff360926a4bbf0471743488ec0ca98c4bbebf519e7a7d15aa2a56",
+  "backend": "b10000-47a39665e",
+  "judge_protocol": "a0a8af1c52c00d8850e5bae7d734044c371140a60d49eecfc13f8ea7f6de2b2e",
+  "correct": {
+    "direct": 16,
+    "cot": 69,
+    "sc": 77,
+    "d3": 66,
+    "final": 85
+  },
+  "questions": 120,
+  "archive_sha256": "f5851bbb574cf4050e5f0a4b995247175de71ab7d2f34f603b57695aa9d01235"
+}

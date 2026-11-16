@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MatSciBench · Qwen3.5-4B 科学推理评测</title>
+<style>
+:root{--paper:#f6f5f0;--white:#fffefa;--ink:#152b2a;--muted:#536765;--line:#d4dbd3;--teal:#00675c;--mint:#e1f1e8;--orange:#b64f27;--rust:#834122;--nav:#173a37;font-family:"DM Sans","Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.6;scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit;color:inherit}button,select{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #db7c3d;outline-offset:3px}a{color:var(--teal)}button{background:var(--white);border:1px solid var(--line);border-radius:5px;padding:5px 11px}button:hover{border-color:var(--teal)}button:disabled{opacity:.38;cursor:default}.top{background:var(--nav);color:#f5f8f2}.top div{max-width:1270px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:13px 30px}.top strong{letter-spacing:.07em;font-size:14px}.top nav{display:flex;gap:22px}.top a{color:#e0eee4;text-decoration:none;font-size:13px}main{max-width:1270px;margin:auto;padding:38px 30px 55px}section{scroll-margin-top:16px}.intro{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:21px;margin-bottom:20px;gap:20px}.meta{font-family:Consolas,"Courier New",monospace;color:var(--teal);font-size:13px;letter-spacing:.045em}h1,h2,h3,p{margin:0}h1{font-size:clamp(32px,4vw,55px);line-height:1.25;letter-spacing:-.055em;margin:5px 0 4px}h2{font-size:clamp(22px,2.6vw,31px);letter-spacing:-.035em;line-height:1.25}h3{font-size:18px}.caption,.muted{color:var(--muted);font-size:13px}.intro .caption{max-width:310px;text-align:right}.overview{display:grid;grid-template-columns:1.58fr 1fr;gap:16px}.panel{background:var(--white);border:1px solid var(--line);border-radius:9px;padding:22px}.panel h2{font-size:19px;letter-spacing:-.02em}.bars{margin-top:15px}.bar{display:grid;grid-template-columns:minmax(130px,1.2fr) minmax(90px,1.6fr) 65px 62px;gap:10px;align-items:center;padding:7px 0;font-size:13px}.bar .name{font-weight:600}.track{background:#ebeeea;height:8px;border-radius:2px}.fill{height:100%;background:#8ba79e;border-radius:2px}.bar:last-child .fill{background:var(--teal)}.bar:last-child .name{color:var(--teal)}.num{font:600 14px Consolas,monospace;font-variant-numeric:tabular-nums;text-align:right}.hero{background:var(--nav);color:white;border-color:var(--nav);display:flex;flex-direction:column;justify-content:space-between}.hero .lead{font-size:15px;color:#d6e7df}.hero .big{font-size:clamp(54px,6vw,82px);font-family:"DM Sans","Segoe UI",sans-serif;font-weight:650;line-height:1.12;letter-spacing:-.06em}.big small{font-size:.35em;color:#c3d6ca;font-weight:450;letter-spacing:0}.hero p{color:#edf4e9;font-size:14px}.parts{display:flex;height:11px;gap:3px;margin:13px 0 6px}.parts span{background:#9fc5ac}.parts span:nth-child(2){background:#68a99d}.parts span:nth-child(3){background:#f7a36b}.parts span:nth-child(4){background:#49635d}.legend{display:flex;flex-wrap:wrap;gap:3px 11px;font-size:11px;color:#e9f1e8}.legend b{color:#ffc698}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:33px 0 13px}.rescueGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.route{background:var(--white);border:1px solid var(--line);border-top:3px solid #78998d;border-radius:6px;padding:15px 17px}.route:last-child{border-top-color:#bd6944}.route h3{display:flex;justify-content:space-between;font-size:15px}.route h3 span{color:var(--muted);font-weight:500}.chips{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}.chips button{font:13px Consolas,monospace;padding:4px 7px;background:#f3f5ef}.chips button[aria-current=true]{background:var(--teal);color:white}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.toolbar input,.toolbar select,.readerTop select,.sample{border:1px solid #becbc2;border-radius:5px;padding:7px 10px;background:#fffefa;max-width:100%}.toolbar input{width:190px}.toolbar #pick{max-width:min(380px,100%)}.count{font:13px Consolas,monospace;color:var(--muted)}.case{margin-top:12px}.casehead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}.id{font:700 17px Consolas,monospace;color:var(--teal)}.ref{font-size:12px;color:var(--muted);overflow-wrap:anywhere}.problem{margin:11px 0 15px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}.gridAns{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}.ans{background:#f7f8f3;min-width:0;padding:9px 10px}.ans:last-child{background:var(--mint)}.ans small{color:var(--muted);display:block}.ans strong{font-family:Consolas,monospace;font-size:15px;overflow-wrap:anywhere}.mark{display:block;font-size:12px}.ok{color:var(--teal)}.err{color:var(--rust)}.proof{border-left:3px solid var(--teal);padding:12px 15px;background:#eff5ee;margin-top:14px}.proof h3{font-size:16px}.proof p{margin:3px 0}.proof details{margin:6px 0 0}.proof summary,details summary{cursor:pointer;color:var(--teal);font-weight:600;font-size:13px}.probe{white-space:pre-wrap;overflow-wrap:anywhere;padding:7px 0;font-size:13px}.readers{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.reader{min-width:0}.readerTop{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:9px}.readerTop select{font-weight:650}.reading{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.66 "Segoe UI","Microsoft YaHei",sans-serif;max-height:440px;overflow:auto;tab-size:4;margin:10px 0 0}.sample{margin-top:8px;font-size:13px}.methodbox{margin-top:18px}.methodbox p{font-size:13px;color:var(--muted);margin-top:6px}.empty{padding:28px;background:var(--white)}[hidden]{display:none!important}footer{color:var(--muted);font:12px Consolas,monospace;margin-top:35px;border-top:1px solid var(--line);padding-top:12px}@media(max-width:830px){.overview{grid-template-columns:1fr}.hero .big{font-size:52px}.rescueGrid{grid-template-columns:1fr}.route{padding:12px 15px}.chips{margin-top:7px}.gridAns{grid-template-columns:repeat(3,1fr)}.intro .caption{max-width:200px}.readers{grid-template-columns:1fr}.top div,main{padding-left:16px;padding-right:16px}}
+@media(max-width:560px){main{padding-top:22px}.intro{display:block}.intro .caption{text-align:left;max-width:none;margin-top:7px}.panel{padding:15px}.bar{grid-template-columns:110px minmax(30px,1fr) 52px 55px;gap:5px}.top nav{gap:10px}.top strong{font-size:12px}.sectionhead{align-items:start;flex-direction:column}.gridAns{grid-template-columns:repeat(2,1fr)}.toolbar input,.toolbar #pick{width:100%;max-width:100%}.readerTop{align-items:start}.legend{gap:2px 6px}}@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+.problem table{border-collapse:collapse;margin:10px 0;width:max-content;max-width:100%;white-space:normal;font-size:14px}.problem th,.problem td{border:1px solid var(--line);padding:5px 12px;text-align:left}.problem th{background:#edf2ec}.proof .difference{font:13px/1.5 Consolas,"Microsoft YaHei",monospace;color:var(--teal)}
+</style></head>
+<body>
+<header class="top"><div><strong>DSC6020 · AI FOR SCIENTIFIC KNOWLEDGE DISCOVERY</strong><nav aria-label="演示导航"><a href="#overview">总览</a><a href="#rescues">互补题</a><a href="#compare">逐题对照</a></nav></div></header>
+<main>
+<section id="overview"><div class="intro"><div><div class="meta">Qwen3.5-4B &nbsp;/&nbsp; MatSciBench</div><h1>材料科学推理评测</h1></div><p class="caption">本地 llama.cpp · BF16 · 普通 CoT 上限 16,384 tokens</p></div>
+<div class="overview"><div class="panel"><h2>五组正确率</h2><div class="bars" id="bars"></div></div><div class="panel hero"><div class="lead">双顺序盲评 + 材料学工具验证</div><div class="big" id="big"></div><p id="heroText"></p><div><div class="parts" id="parts" aria-hidden="true"></div><div id="legend" class="legend"></div></div></div></div></section>
+<section id="rescues"><div class="sectionhead"><h2>D3 独对的 16 道题</h2><span class="caption">点选题号，查看两份原回答与选答依据</span></div><div class="rescueGrid" id="routes"></div></section>
+<section id="compare"><div class="sectionhead"><h2>逐题回答对照</h2><span id="count" class="count" aria-live="polite"></span></div>
+<div class="toolbar"><select id="filter" aria-label="按正确性筛选"></select><input id="search" type="search" aria-label="搜索题目" placeholder="搜索题号、题干或来源"><select id="pick" aria-label="选择题目"></select><button id="prev" aria-label="上一题">← 上一题</button><button id="next" aria-label="下一题">下一题 →</button></div>
+<p id="empty" class="empty" hidden>没有匹配的题目。<button id="reset">清除筛选</button></p>
+<div id="case" class="case panel"><div class="casehead"><div><span class="id" id="qid"></span> <span class="ref" id="source"></span></div><b id="gold"></b></div>
+<div class="problem" id="problem"></div><div class="gridAns" id="answers"></div><div class="proof" id="proof"></div></div>
+<div id="readers" class="readers"></div>
+</section><details class="methodbox"><summary>评测口径与实验条件</summary><p>五组使用相同的 120 题。最终行的有限数值在参考值 ±5% 内计为正确；参考值为零时使用绝对容差 10⁻¹²。截断或缺少有效 FINAL 行的模型回答计错。Self-Consistency 每题以温度 0.6 生成五次，按数值的 1% 相对间距聚类并投票。D3 使用 checkpoint-134，LoRA scale 为 0.25。</p><p>验证器复用底座和 D3 的原回答，交换顺序进行两次匿名评判；复算值能清楚区分两者时可改选。85 是两份候选在这个固定题集上的正确题并集。规则改进参考过同一题集的错误，各组使用的推理预算不同。</p></details>
+<footer>DSC6020 · Qwen3.5-4B · MatSciBench</footer>
+</main><script type="application/json" id="results">__REVIEWED_RESULTS__</script>
+<script>
+"use strict";
+const rows=JSON.parse(document.getElementById("results").textContent);
+const keys=["direct","cot","sc","d3","final"], names={direct:"Direct Answer",cot:"底座普通 CoT",sc:"CoT + Self-Consistency",d3:"D3 普通 CoT",final:"最终验证器"};
+const routeNames={blind:"双顺序盲评一致",default:"盲评回退至底座",format:"最终答案格式检查",worksheet:"物理约束复算",material:"材料学工具复算",binding:"物理量与定义核对"};
+const toolNames={worksheet:"物理约束",polarization:"电子极化",flow:"应力与应变",schottky:"Schottky 缺陷对",composite:"复合材料比刚度",linear_count:"晶体线密度",spinel:"尖晶石磁矩"};
+const voteNames={unanimous:"五票一致",majority:"多数一致",plurality:"相对多数",no_consensus:"无聚类共识",no_valid_output:"无有效回答"};
+const $=id=>document.getElementById(id), txt=(tag,value,cls)=>{const e=document.createElement(tag);e.textContent=value;if(cls)e.className=cls;return e};
+const option=(value,label)=>new Option(label,value);
+const answer=(r,k)=>r.answers[k==="final"?r.selected:k];
+const id=r=>"T"+String(r.n).padStart(3,"0");
+const pred=a=>a.p==null?"无有效数值":a.p;
+const mark=a=>a.ok?"✓ 正确":a.status==="truncated"?"× 截断":a.status==="format"?"× 格式无效":"× 错误";
+const category=r=>r.answers.cot.ok?(r.answers.d3.ok?"both":"base"):(r.answers.d3.ok?"rescue":"miss");
+const groupNames={rescue:"D3 独对",base:"底座独对",both:"共同答对",miss:"共同答错"};
+const tally=key=>rows.filter(r=>answer(r,key).ok).length;
+const sizes=Object.fromEntries(Object.keys(groupNames).map(k=>[k,rows.filter(r=>category(r)===k).length]));
+let current=rows.find(r=>category(r)==="rescue"&&r.route==="binding").n,view=rows,left="cot",right="d3";
+function overview(){
+  for(const key of keys){let n=tally(key),pct=100*n/rows.length,b=txt("div","","bar"),track=txt("div","","track"),fill=txt("div","","fill");fill.style.width=pct+"%";track.append(fill);b.append(txt("span",names[key],"name"),track,txt("span",n+"/120","num"),txt("span",pct.toFixed(1)+"%","num"));$("bars").append(b)}
+  $("big").append(document.createTextNode(tally("final")+" "),txt("small","/ 120"));
+  $("heroText").textContent="保住底座答对的 "+tally("cot")+" 题，再从 D3 选回 "+sizes.rescue+" 题。";
+  for(const k of ["both","base","rescue","miss"]){let item=txt("span","");item.style.flex=sizes[k];$("parts").append(item);$("legend").append(txt(k==="rescue"?"b":"span",groupNames[k]+" "+sizes[k]))}
+  for(const [label,group] of [["双顺序盲评",["blind"]],["格式检查",["format"]],["物理复算与定义核对",["worksheet","material","binding"]]]){
+    const rr=rows.filter(r=>category(r)==="rescue"&&group.includes(r.route)),card=txt("div","","route"),header=txt("h3",label);header.append(txt("span",rr.length+" 题"));let chips=txt("div","","chips");
+    for(const r of rr){const b=txt("button",id(r));b.dataset.num=r.n;b.title=r.question.slice(0,120);b.onclick=()=>{$("filter").value="rescue";$("search").value="";left="cot";right="d3";refresh(r.n);$("compare").scrollIntoView()};chips.append(b)}
+    card.append(header,chips);$("routes").append(card)
+  }
+  $("filter").add(option("all","全部 120 题"));for(const k of Object.keys(groupNames))$("filter").add(option(k,groupNames[k]+" · "+sizes[k]))
+}
+function details(title,body){const d=document.createElement("details");d.append(txt("summary",title),txt("div",body,"probe"));return d}
+function showProblem(q){
+  const area=$("problem");area.replaceChildren();const lines=q.split("\n");
+  for(let i=0;i<lines.length;){
+    if(lines[i].trim().startsWith("|") && i+1<lines.length && /^[\s|:\-]+$/.test(lines[i+1])){
+      const t=document.createElement("table");let first=true;
+      while(i<lines.length && lines[i].trim().startsWith("|")){
+        const cells=lines[i++].trim().replace(/^\||\|$/g,"").split("|").map(x=>x.trim());
+        if(cells.every(x=>/^:?-+:?$/.test(x)))continue;
+        const tr=document.createElement("tr");cells.forEach(c=>tr.append(txt(first?"th":"td",c)));t.append(tr);first=false
+      }area.append(t)
+    }else{area.append(document.createTextNode(lines[i++]+(i<lines.length?"\n":"")))}
+  }
+}
+function physicalNote(c){
+  const t=c.trace||{};
+  if(c.tool==="composite" && t.mixture_density && t.mixture_modulus_Pa)return "先求混合模量 "+(t.mixture_modulus_Pa/1e9).toPrecision(5)+" GPa，再除以混合比重 "+Number(t.mixture_density.toPrecision(6))+"。";
+  if(c.tool==="linear_count")return "按晶体结构将给定长度换算为晶胞边长，沿指定晶向的一个重复段计入 "+t.sites+" 个原子中心。";
+  if(c.tool==="spinel")return "按理想反尖晶石常规晶胞，两个亚晶格的铁离子磁矩相消，剩余离子每个化学式单位贡献 "+t.unpaired_M2+" μB，计 "+t.formula_units+" 个化学式单位。";
+  if(c.tool==="flow")return "用两个塑性流动数据点拟合幂律，硬化指数 n = "+Number(t.n.toPrecision(5))+"；按题目所求的应力、应变定义换算。";
+  if(c.tool==="schottky")return "温度换算为 "+t.absolute_T+" K，按正负空位组成的缺陷对计数。";
+  if(c.tool==="polarization")return "按每晶胞 "+t.atoms_per_cell+" 个原子、每原子 "+t.electrons_per_atom+" 个电子，把偶极矩换算成单位体积的极化强度。";
+  if(c.tool==="worksheet")return "将外加拉应力投影到滑移面的法向与滑移方向，复算分解剪应力。";
+  return ""
+}
+function evidence(r){
+  const p=$("proof");p.replaceChildren(txt("h3","最终采用 "+names[r.selected]+" · "+routeNames[r.route]));
+  const chosen=r.check==null?null:r.checks[r.check];
+  if(chosen){const v=chosen.values;const num=v.Value==null?JSON.stringify(v):Number(v.Value.toPrecision(7));p.append(txt("p",physicalNote(chosen)+toolNames[chosen.tool]+"复算得到 "+num+" "+chosen.unit+"。"));
+    if(v.Value){const gap=k=>(100*Math.abs(Number(r.answers[k].p)-v.Value)/Math.abs(v.Value)).toFixed(2)+"%";p.append(txt("p","距复算值：底座 "+gap("cot")+" · D3 "+gap("d3")+"。改选阈值为一个候选偏差 ≤5%，另一个 >10%。","difference"))}
+    p.append(details("展开复算输入与中间量",JSON.stringify(chosen.trace,null,2)+(chosen.review?"\n\n"+chosen.review:"")))}
+  else if(r.route==="format"){p.append(txt("p","底座回答缺少可评分的最终数值，D3 正常提交了有效 FINAL 行，触发格式回退。"))}
+  else if(r.route==="blind"){p.append(txt("p","互换 A、B 的位置后，两次裁判仍选择同一份回答。下方保留两次核查原文。"))}
+  else{p.append(txt("p","交换顺序后的两次判决分歧或未解析，沿用底座回答。"))}
+  r.blind.forEach((j,i)=>{const first=names[j.first],second=names[j.first==="d3"?"cot":"d3"];const d=details("盲评 "+(i+1)+" · A："+first+" / B："+second+" · "+(j.pick?names[j.pick]:"未解析"),j.review);d.open=i===0&&r.route==="blind"&&category(r)==="rescue";p.append(d)})
+}
+function renderReader(side,r){
+  const k=side==="left"?left:right;const panel=txt("article","","panel reader");const head=txt("div","","readerTop"),sel=document.createElement("select");
+  sel.setAttribute("aria-label",side==="left"?"左侧回答组":"右侧回答组");keys.forEach(g=>sel.add(option(g,names[g])));sel.value=k;
+  sel.onchange=()=>{if(side==="left")left=sel.value;else right=sel.value;readerPair(r)};
+  let aa=answer(r,k),source=k==="final"?"采用 "+names[r.selected]+" 原回答":"模型原回答";head.append(sel,txt("small",source,"muted"));panel.append(head);
+  const pre=txt("pre","","reading");pre.tabIndex=0;pre.setAttribute("aria-label",names[k]+" 回答原文");
+  if(k==="sc"){const v=aa.vote,s=document.createElement("select");s.className="sample";s.setAttribute("aria-label","选择采样回答");aa.samples.forEach((sample,i)=>s.add(option(i,"采样 "+(i+1)+" · "+pred(sample)+(i+1===v.selected_slot?" · 投票选中":""))));s.value=String((v.selected_slot||1)-1);s.onchange=()=>{pre.textContent=aa.samples[Number(s.value)].text||"空输出"};panel.append(txt("p",voteNames[v.state]+" · "+v.support+"/5 票 · "+(v.selected_slot?"选用采样 "+v.selected_slot:"未产生有效数值"),"caption"),s);s.onchange()}
+  else pre.textContent=aa.text||"空输出";
+  panel.append(pre);return panel
+}
+function readerPair(r){$("readers").replaceChildren(renderReader("left",r),renderReader("right",r))}
+function render(r){
+  $("qid").textContent=id(r);$("source").textContent=r.qid;$("gold").textContent="参考值 "+r.gold+(r.unit?" "+r.unit:"");showProblem(r.question);
+  $("answers").replaceChildren(...keys.map(k=>{const a=answer(r,k),card=txt("div","","ans");card.append(txt("small",names[k]),txt("strong",pred(a)),txt("span",mark(a),"mark "+(a.ok?"ok":"err")));return card}));
+  evidence(r);readerPair(r);document.querySelectorAll(".chips button").forEach(b=>b.setAttribute("aria-current",String(Number(b.dataset.num)===r.n)))
+}
+function refresh(wanted){
+  const search=$("search").value.trim().toLowerCase(),kind=$("filter").value;
+  view=rows.filter(r=>(kind==="all"||category(r)===kind)&&(!search||[id(r),r.qid,r.question].join(" ").toLowerCase().includes(search)));
+  const r=view.find(x=>x.n===wanted)||view[0];const picker=$("pick");picker.replaceChildren(...view.map(x=>option(x.n,id(x)+" · "+x.question.slice(0,70))));
+  for(const target of ["case","readers"])$(target).hidden=!r;$("empty").hidden=!!r;picker.disabled=!r;
+  const i=r?view.indexOf(r):-1;$("prev").disabled=i<=0;$("next").disabled=i<0||i===view.length-1;
+  $("count").textContent=r?"当前 "+(i+1)+" / "+view.length+" 题":"0 题";
+  if(r){current=r.n;picker.value=r.n;render(r)}else document.querySelectorAll(".chips button").forEach(b=>b.removeAttribute("aria-current"))
+}
+$("filter").onchange=()=>refresh(current);$("search").oninput=()=>refresh(current);$("pick").onchange=()=>refresh(Number($("pick").value));
+$("prev").onclick=()=>refresh(view[view.findIndex(x=>x.n===current)-1].n);$("next").onclick=()=>refresh(view[view.findIndex(x=>x.n===current)+1].n);
+$("reset").onclick=()=>{$("filter").value="all";$("search").value="";refresh(current)};
+overview();refresh(current);
+</script></body></html>
+
